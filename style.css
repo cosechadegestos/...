@@ -284,3 +284,11 @@ a {
     object-fit: contain;
   }
 }
+
+#logos{
+    grid-column: 1/6;
+  grid-row: 3/3;
+  margin: auto;
+  padding: 0 0 0 0;
+  width: 100%;
+}
