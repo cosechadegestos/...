@@ -255,20 +255,6 @@ a {
 }
 
 
-/* En móvil, sigue como imagen normal */
-@media (max-width: 899px) {
-  body {
-    background-color: #1e7967;
-    background-image: none;
-  }
-  #logos {
-    display: block;
-    width: 100%;
-    max-height: 120px;
-    margin: 0 0;
-    object-fit: contain;
-  }
-}
 
 #logos{
     grid-column: 1/6;
