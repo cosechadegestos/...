@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cosecha de Gestos</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <script src="script.js"></script>
 
-    <div id="mySidebar" class="sidebar">
+    <!-- Sidebar -->
+    <nav id="mySidebar" class="sidebar" aria-label="Menú principal">
       <h2 id="bar">
         <a href="/">Cosecha de<br />Gestos</a>
       </h2>
-
       <a class="lista" href="/.../Experiencias">EXPERIENCIAS</a>
-      <a class="lista" href="/.../Laboratorio GA"
-        >LABORATORIO DE GESTOS AGROECOLÓGICOS</a
-      >
+      <a class="lista" href="/.../Laboratorio GA">LABORATORIO DE GESTOS AGROECOLÓGICOS</a>
       <a class="lista" href="/.../Debate Pedagógico">DEBATE PEDAGÓGICO</a>
-    </div>
+    </nav>
 
-    <div id="main">
-      <button class="openbtn" onclick="oopenNav()">☰</button>
-      <button class="back" id="back" onclick="back(bb)">&#60;</button>
+    <!-- Botón para abrir sidebar (visible en móvil) -->
+    <button class="openbtn" aria-label="Abrir menú" onclick="oopenNav()">☰</button>
+    <button class="back" id="back" aria-label="Regresar" onclick="back(bb)">&#60;</button>
+
+    <main id="main">
       <div class="todo">
-        <div class="page">
+        <section class="page">
           <a class="one" href="/.../CosechadeGestos">
             <h1>Cosecha de <br />gestos</h1>
             <p class="justify">
@@ -41,7 +43,6 @@
               habilitaron otras distribuciones de los apoyos, otros modos de
               atención-escucha y otras formas de relación experimentales entre
               los cuerpos e identidades que habitan el espacio.
-
               <br /><br />
               El Huerto Agroforestal Universitario se encuentra localizado en la
               Escuela Nacional de Estudios Superiores Unidad Morelia, una
@@ -70,14 +71,14 @@
               arte.
             </p>
           </a>
-
           <img
             id="logos"
             src="https://drive.google.com/thumbnail?id=1jRblVN19GjbEkxqWU7OwCzZGTHbO0zTE&sz=w4080"
+            alt="Logos de Cosecha de Gestos"
           />
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
