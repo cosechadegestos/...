@@ -220,7 +220,6 @@ a {
     margin-bottom: 1rem;
   }
   #logos {
-    max-height: 120px;
     width: 100%;
     margin: 0 auto;
     object-fit: contain;
