@@ -1,19 +1,19 @@
 let bb = 0;
 let cond = true;
 
+// Sidebar responsiva: cambia ancho según dispositivo
 function openNav() {
-  document.getElementById("mySidebar").style.width = "50%";
-   // document.getElementById("mySidebar").style.color = "white";
-
-  //  document.getElementById("main").style.marginLeft = "50%";
+  const sidebar = document.getElementById("mySidebar");
+  if (window.innerWidth <= 600) {
+    sidebar.style.width = "70vw";
+  } else {
+    sidebar.style.width = "50%";
+  }
   cond = false;
 }
 
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
-  //document.getElementById("mySidebar").style.color = "transparent";
-
-  //  document.getElementById("main").style.marginLeft = "0";
   cond = true;
 }
 
@@ -62,7 +62,7 @@ function lga() {
 
 function experiencias() {
   document.getElementById("page").innerHTML =
-    '<h2>Experiencias</h2> <a href="javascript:void(0); compartencia()">Compartencia</a><br><a href="javascript:void(0); cheran()">Cherán</a><br><a href="javascript:void(0); mb()">Marie Bardet</a><br><a href="javascript:void(0); hau()">Festival HAU</a><br><a href="javascript:void(0); residencia()">Residencia</a>';
+    '<h2>Experiencias</h2> <a href="javascript:void(0); compartencia()">Compartencia</a><br><a href="javascript:void(0); cheran()">Cherán</a><br><a href="javascript:void(0); mb()">Marie Bardet</a><br><a href="javascript:void(0); hau()">Festival Huerto Agroforestal Universitario</a><br><a href="javascript:void(0); residencia()">Residencia</a>';
   closeback();
 }
 
