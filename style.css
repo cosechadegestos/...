@@ -173,17 +173,6 @@ a {
   text-decoration: none;
 }
 
-/* IMAGEN AJUSTADA */
-#logos{
-  grid-column: 1/6;
-  grid-row: 3/3;
-  margin: auto;
-  padding: 0;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
 
 /* Imagen responsiva en móvil */
 @media (max-width: 900px) {
@@ -218,11 +207,7 @@ a {
     font-size: 1rem;
     margin-bottom: 1rem;
   }
-  #logos {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-  }
+
 }
 
 /* Sidebar para móviles */
