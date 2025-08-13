@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Labrada:wght@400;500&display=swap");
 html {
-  font-size: 16pt;
+  font-size: 16pt; /* 100% = 16px */
   height: 100vh;
 }
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0px 0px 0px 0px;
   background-color: #1e7967;
 }
 
@@ -17,7 +17,7 @@ body {
   position: fixed;
   z-index: 5;
   top: 0;
-  right: 0;
+  right: 0%;
   background-color: rgb(30, 121, 103, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
@@ -26,7 +26,8 @@ body {
 
 .sidebar .lista {
   height: 7%;
-  padding: 6% 0;
+  padding: 6% 0 6% 0;
+  font-weight: normal;
   font-family: "Labrada", serif;
   font-size: 30px;
   display: block;
@@ -44,12 +45,12 @@ body {
   font-size: 50px;
   cursor: pointer;
   color: white;
+  padding: 0px;
   border: none;
-  background: none;
-  padding: 0;
 }
 
 .openbtn {
+  background: rgba(0, 0, 0, 0);
   position: absolute;
   z-index: 20;
   left: 95%;
@@ -66,10 +67,18 @@ body {
 
 #main {
   transition: margin-left 0.05s;
-  padding: 0;
+  padding: 0px;
 }
 
-/* Grid principal */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
 .page {
   height: 100vh;
   width: 100vw;
@@ -78,71 +87,84 @@ body {
   grid-template-rows: 50% 50%;
 }
 
-.one {
-  padding: 9vh 0 0 3.9vw;
+.page div {
+  color: white;
+}
+.one{
+  padding: 9vh 0px 0px 3.90625vw;
   grid-column: 1/3;
   grid-row: 1/3;
   background-color: #1e7967;
+  margin: 0;
 }
 .two {
-  padding: 32vh 0 0 1.7vw;
+  padding: 32vh 0px 0px 1.71875vw;
   grid-column: 3/5;
   grid-row: 1;
   background-color: #2b9d63;
+  margin: 0;
 }
 .three {
-  padding: 25.7vh 0 0 1.7vw;
+  padding: 25.765625vh 0px 0px 1.71875vw;
   grid-column: 3;
   grid-row: 2;
   background-color: #26a5a3;
+  margin: 0;
 }
 .four {
-  padding: 25.7vh 0 0 1.1vw;
+  padding: 25.765625vh 0px 0px 1.171875vw;
   grid-column: 4;
   grid-row: 2;
   background-color: #1e7967;
+  margin: 0;
 }
 
-.one:hover,
-.two:hover,
-.three:hover,
-.four:hover {
+.one:hover, .two:hover, .three:hover, .four:hover {
   background-color: #444444;
 }
 
 h1 {
   font-size: 10vh;
+  font-weight: lighter;
   font-family: "Labrada", serif;
-  line-height: 1.1;
+  line-height: 8vh;
+  padding-bottom: 0;
   margin: 0 0 3.5vh 0;
 }
 
 h2 {
-  font-size: 2.8vw;
+  font-size: 2.8125vw;
+  font-weight: lighter;
   font-family: "Labrada", serif;
+  padding: 0px;
   margin: 0 0 6vw 2vw;
 }
 
 h3 {
-  font-size: 1.8vw;
+  font-size: 1.875vw;
+  font-weight: lighter;
   font-family: "Labrada", serif;
-  margin: 0 0 1.8vh 0;
+  padding: 0px;
+  margin: 0 0 1.875vh 0;
 }
 
 h4 {
-  font-size: 1.6vw;
+  font-size: 1.6875vw;
+  font-weight: lighter;
   font-family: "Labrada", serif;
-  margin: 0 0 1.8vw 0;
+  padding: 0px;
+  margin: 0 0 1.875vw 0;
 }
 
 p {
   font-size: 1.45vw;
   font-family: "Alegreya Sans", sans-serif;
-  margin: 0 2vw 0 0;
+  padding: 0px;
+  margin: 0 2vw 0px 0px;
 }
 
-.justify {
-  text-align: justify;
+.justify{
+    text-align: justify;
   text-justify: inter-word;
 }
 
@@ -151,27 +173,26 @@ a {
   text-decoration: none;
 }
 
-#logos {
+/* IMAGEN AJUSTADA */
+#logos{
   grid-column: 1/6;
   grid-row: 3/3;
   margin: auto;
   padding: 0;
   width: 100%;
+  max-width: 600px;
   height: auto;
-  max-height: 200px;
   object-fit: contain;
+  display: block;
 }
 
-/* RESPONSIVO: móvil y pantallas chicas */
+/* Imagen responsiva en móvil */
 @media (max-width: 900px) {
-  html {
-    font-size: 13pt;
-  }
   .page {
     display: flex;
     flex-direction: column;
-    gap: 2vw;
-    padding: 2vw;
+    /* gap: 0;  Quitado para evitar espacios entre secciones */
+    padding: 0; /* Quitado para evitar espacios laterales */
     height: auto;
     width: 100vw;
   }
@@ -181,7 +202,8 @@ a {
     font-size: 1rem;
     grid-column: auto !important;
     grid-row: auto !important;
-    background-color: #1e7967;
+    margin: 0; /* Sin margen entre bloques */
+    width: 100%;
   }
   .two { background-color: #2b9d63; }
   .three { background-color: #26a5a3; }
@@ -198,13 +220,12 @@ a {
     margin-bottom: 1rem;
   }
   #logos {
-    width: 85vw;
-    max-width: 380px;
-    height: auto;
-    max-height: 100px;
-    margin: 2vw auto;
+    max-width: 90vw;
+    max-height: 120px;
+    width: 100%;
+    margin: 0 auto;
     object-fit: contain;
-    grid-row: auto !important;
+    display: block;
   }
 }
 
@@ -229,7 +250,6 @@ a {
   }
 }
 
-/* Pantallas muy bajas */
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 15px;
