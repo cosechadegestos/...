@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Labrada:wght@400;500&display=swap");
+html {
+  font-size: 16pt; /* 100% = 16px */
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  background-color: #1e7967;
+  color: white;
+}
+.sidebar {
+  color: white;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0%;
+  background-color: rgb(30, 121, 103, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 27px;
+}
+
+
+
+.sidebar .lista {
+  height: 7%;
+  padding: 7.5% 0 13% 0;
+  font-weight: normal;
+  font-family: "Labrada", serif;
+  font-size: 30px;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+  line-height: 4vh;
+}
+
+.sidebar .lista:hover {
+  background-color: #94b598;
+}
+
+.openbtn,
+.back {
+  font-size: 50px;
+  cursor: pointer;
+  color: white;
+  padding: 0px;
+  border: none;
+}
+
+.openbtn {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 20;
+  left: 95%;
+  top: 5%;
+}
+
+.back {
+  display: none;
+}
+
+.back:hover {
+  background-color: #444444;
+}
+
+
+#main {
+  transition: margin-left 0.05s;
+  padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+
+#page {
+  padding: 0, 10%, 0, 10%;
+  color: white;
+}
+
+h1 {
+  font-size: 10.5vh;
+  font-weight: normal;
+  font-family: "Labrada", serif;
+  line-height: 2vh;
+  margin: 10vh 0 3.5vh 12.625vw;
+  color: white;
+}
+
+h2 {
+  font-size: 3.33vw;
+  font-weight: lighter;
+  font-family: "Labrada", serif;
+  font-style: italic;
+  padding: 0px;
+  margin: 5vh 0 3.5vh 12.625vw;
+}
+
+h3 {
+  font-size: 2.3vw;
+  font-weight: lighter;
+  font-family: "Labrada", serif;
+  line-height: 2.5vw;
+  padding: 5vh 0 0 5vh;
+  margin: 0 0 1.875vh 0;
+}
+
+h4 {
+  font-size: 1.6875vw;
+  font-weight: lighter;
+  font-family: "Labrada", serif;
+  padding: 0px;
+
+  margin: 0 0 1.875vw 0;
+}
+
+p {
+  color: white;
+  font-size: 1.7vw;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: normal;
+  text-align: justify;
+  margin: 0vh 12.625vw 0 12.625vw;
+  line-height: 5vh;
+  color: white;
+  
+}
+
+.sub{
+    font-size: 1.6875vw;
+  font-weight: lighter;
+  font-family: "Labrada", serif;
+   text-align: justify;
+  margin: 0vh 12.625vw 0 12.625vw;
+  line-height: 5vh;
+}
+
+#lugar {
+   font-size: 1.4vw;
+  font-family: "Labrada", serif;  
+  line-height: 3.5vh;
+
+}
+
+.lugar {
+   font-size: 1.4vw;
+  font-family: "Labrada", serif;  
+  line-height: 3.5vh;
+
+}
+
+.autoria {
+ font-size: 1.25vw;
+  font-family: "Alegreya Sans", sans-serif;
+  line-height: 3vh;
+margin-top: 9.5vh;
+}
+
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+#bar{
+  font-size: 2.8125vw;
+  font-weight: lighter;
+  font-family: "Labrada", serif;
+  padding: 0px;
+    font-style: normal;
+  margin: 0 0 7vw 2vw;
+    line-height: 8.1vh;
+
+}
+
+img{
+  display: block;
+  margin: auto;
+  padding: 9.5vh 0 9.5vh 0;
+  width: 50%;
+}
+
+.portada{
+    width: 70%;
+
+}
+
+#logos{
+  display: block;
+  margin: auto;
+  padding: 15vh 0 0 0;
+  width: 100%;
+}
+
+iframe{
+  display: block;
+  margin: auto;
+  padding: 9.5vh 0 9.5vh 0;
+  width: 70%;
+  height: 90vh;
+}
+
+.creditos{
+  
+   font-size: 1vw;
+  font-family: "Alegreya Sans", sans-serif;
+  line-height: 3vh;
+   text-align: justify;
+  text-justify: inter-word;
+    margin: 0vh 17.625vw 9.5vh 17.625vw;
+  padding: 0 0 0 0;
+
+}
+
+
+.creditosc{
+  
+   font-size: 1vw;
+  font-family: "Alegreya Sans", sans-serif;
+  line-height: 3vh;
+   text-align: center;
+  text-justify: inter-word;
+    margin: 0vh 17.625vw 9.5vh 17.625vw;
+  padding: 0 0 0 0;
+
+}
+
+
+.creditosf{
+  
+   font-size: 1vw;
+  font-family: "Alegreya Sans", sans-serif;
+  line-height: 3vh;
+   text-align: justify;
+  text-justify: inter-word;
+  margin: 0vh 12.625vw 0 12.625vw;
+  padding: 0 0 0 0;
+
+}
+
+ul{
+    color: white;
+  font-size: 1.5vw;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: normal;
+  text-align: justify;
+  margin: 0vh 14.625vw 0 14.625vw;
+  line-height: 5vh;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+p a:hover{
+  color: #94b598;
+}
+
+p a:visited{
+  color: #444444;
+  font-weight: normal;
+
+}
+
+#referencias{
+  color: white;
+  font-size: 1.3vw;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: normal;
+  text-align: justify;
+  margin: 0vh 12.625vw 0 12.625vw;
+  line-height: 3vh;  
+}
+
+
+
+.sonido{
+  display: block;
+  margin: auto;
+  padding: 9.5vh 0 9.5vh 0;
+  width: 70%;
+  height: 50vh;
+}
