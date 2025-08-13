@@ -273,3 +273,27 @@ a {
   }
 }
 
+/* Imagen como fondo en escritorio */
+@media (min-width: 900px) {
+  body {
+    background: url('https://drive.google.com/thumbnail?id=1jRblVN19GjbEkxqWU7OwCzZGTHbO0zTE&sz=w4080') no-repeat center center fixed;
+    background-size: cover;
+  }
+  #logos {
+    display: none;
+  }
+}
+/* En móvil, sigue como imagen normal */
+@media (max-width: 899px) {
+  body {
+    background-color: #1e7967;
+    background-image: none;
+  }
+  #logos {
+    display: block;
+    width: 90vw;
+    max-height: 120px;
+    margin: 0 auto;
+    object-fit: contain;
+  }
+}
