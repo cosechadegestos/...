@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Compartencia/style.css" />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+
+    <div id="mySidebar" class="sidebar">
+      <h2 id="bar">
+        <a href="/">Cosecha de<br />Gestos</a>
+      </h2>
+
+      <a class="lista" href="Experiencias">EXPERIENCIAS</a>
+      <a class="lista" href="Laboratorio GA"
+        >LABORATORIO DE GESTOS AGROECOLÓGICOS</a
+      >
+      <a class="lista" href="Debate Pedagógico">DEBATE PEDAGÓGICO</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="oopenNav()">☰</button>
+      <button class="back" id="back" onclick="back(bb)">&#60;</button>
+      <div id="page">
+        <h3>
+          <a href="index.html">
+            Cosecha
+            <br />
+            de Gestos
+          </a>
+        </h3>
+        <h1>Cosecha de Gestos</h1>
+        <br />
+        <br />
+        <br />
+
+        <p class="autoria">
+          Texto por José Imanol Basurto Lucio,
+
+          <br />
+          estudiante de Historia del Arte de la Escuela Nacional
+          <br />
+          de Estudios Superiores Unidad Morelia y
+          <br />
+          David Gutiérrez Castañeda,
+          <br />
+          profesor de la Escuela Nacional de Estudios Superiores Unidad Morelia.
+        </p>
+        <br />
+        <br />
+        <br />
+
+        <p>
+          Esta web versa sobre iniciativas de arte y agrosilvicultura que han
+          acontecido en el Huerto Agroforestal Universitario y en el Seminario
+          de Estudios del Performance y las Artes Vivas de la ENES Morelia UNAM,
+          el Laboratorio de Gestos Agroecológicos, además de trabajos de campo y
+          seminarios académicos y artísticos entre el 2023 y el 2025. Artistas
+          mexicanos presentaron talleres e instalaciones producidas a partir de
+          estancias de investigación-creación; que tuvieron como resultado
+          propuestas de gestos queer que suspenden organizaciones cotidianas del
+          sensorio y de producción agroecológica. Estas propuestas gestuales
+          habilitaron otras distribuciones de los apoyos, otros modos de
+          atención-escucha y otras formas de relación experimentales entre los
+          cuerpos e identidades que habitan el espacio.
+        </p>
+        <br />
+        <br />
+
+        <p>
+          El Huerto Agroforestal Universitario se encuentra localizado en la
+          Escuela Nacional de Estudios Superiores Unidad Morelia, una
+          universidad del centro-oeste del territorio mexicano, en el estado de
+          Michoacán. Es un proyecto que data del 2017, diseñado como un espacio
+          para la enseñanza, el acompañamiento y la experimentación colectiva de
+          procesos orgánicos de cultivo.<sup
+            ><a id="fn1" href="#fnn1">1</a></sup
+          >
+          El Huerto prospera ritmos de cultivo horizontales desde una visión
+          interdisciplinaria que atiende a los problemas agroforestales,
+          socioecológicos y biológicos de la región, disponiendo de una variedad
+          de técnicas colectivas para el sostenimiento del terreno, que
+          responden de forma gentil ante el cambio climático, apoyándose en
+          conocimientos científicos y tradicionales/culturales de la región.<sup
+            ><a id="fn2" href="#fnn2">2</a></sup
+          >
+          En el marco de organización del proyecto y respetando sus ritmos
+          vitales, el Proyecto Entre Campo y Campo: Operaciones, Prácticas y
+          Gestos Pedagógicos entre Agrosilviculturas y Artes, y el Proyecto
+          Poéticas Agrosilviculturales: Estrategias Situadas de Pedagogías y
+          Arte para los Cultivos,las Soberanías Alimentarias y las Diversidades
+          vitales, coordinados por el Dr. David Gutiérrez Castañeda, han buscado
+          el contagio epistémico entre agroecología y prácticas artísticas, en
+          esta búsqueda es en donde se sitúan los gestos queer que integran esta
+          web.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          La propuesta de un gesto queer surge como un intento por explicitar
+          aquello queer (desidentificante, derorientante, desontologizante,
+          erótico-deseante) que ocurrió en las prácticas artísticas llevadas a
+          cabo en el huerto. Con gesto referimos a aquello que Bardet identifica
+          en su lectura del ingeniero agrónomo André-Georges Haudricourt y sus
+          estudios en torno a las formas de cultivo o pastoreo, las cuales
+          organizan relaciones entre humanos, animales y vegetales. Para
+          Haudricourt, la figura del cultivador de ñame en extremo oriente está
+          en oposición a la del pastor extremo occidental, en tanto que cada
+          uno, en sus técnicas de trabajo y de cuidado del ganado/cultivo,
+          representa una forma de acción-intervención del ser humano en el otro
+          (un gesto) que organiza no solamente su trato de aquello no humano,
+          sino su trato entre humanos. El pastoreo promueve una relación
+          vertical con los animales que a su vez reproduce el dominio de la
+          naturaleza y del hombre por el hombre, característicos de las
+          sociedades modernas capitalistas. Por su parte, las prácticas
+          agrícolas en oriente habilitan para Haudricourt una relación de
+          dependencia y cuidado en dónde tiempos y vitalidades más que humanas
+          son respetadas y no explotadas bajo el yugo humano, estableciendo una
+          relación más gentil.<sup><a id="fn3" href="#fnn3">3</a></sup>
+
+          <br />
+          <br />
+        </p>
+
+        <p>
+          Leyendo a Haudricourt, Bardet lleva la potencia del gesto como
+          organizador de sociedades a su campo de trabajo teórico: la danza y
+          las prácticas artísticas. Para ella, el gesto es una relación
+          «cuerpo/objeto/fuerza/contexto», una continuidad entre estilo, técnica
+          corporal, corporalidad y mentalidad.<sup
+            ><a id="fn4" href="#fnn4">4</a></sup
+          >
+          Bardet, en textos previos, afianza una notación que trae visibilidad a
+          la composición del gesto por dos vectores: la percepción y la
+          acción.<sup><a id="fn5" href="#fnn5">5</a></sup> En tanto que no es
+          autónomo, y supone una forma de relación-con, podemos decir que es más
+          bien compuesto por (re)acciones y percepciones, produce y es
+          producido-por, efectúa y es efectuado-para.<sup
+            ><a id="fn6" href="#fnn6">6</a></sup
+          >
+          El pensamiento gestual permite hablar de las relaciones y los efectos
+          de las actividades humanas en sus contextos, por lo tanto, habilita
+          una dimensión social y ecológica al pensamiento en torno a prácticas
+          artísticas y de danza.<sup><a id="fn7" href="#fnn7">7</a></sup>
+          Esta estrategia y forma de enunciar una práctica artística nos permite
+          desplegar una serie de gramáticas que describen cómo los cuerpos
+          hacen, perciben y se relacionan entre sí. Afirma la pregunta por el
+          convivio y el sensorio que se despliega momentáneamente durante una
+          práctica humana y cómo las prácticas artísticas pueden hacer algo por
+          la reconfiguración de un orden preestablecido de sociabilidad y
+          percepción.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Recogemos la provocación del gesto queer siguiendo la intuición que
+          tiene Karen Barad cuando utiliza dicha partícula, no para referir a lo
+          extraño o inusual, sino para inferir que estos gestos queer producen
+          una reconfiguración y una interrogación particular de las relaciones,
+          percepciones e identidades<sup><a id="fn8" href="#fnn8">8</a></sup>
+          que operan previamente en el Huerto y en los imaginarios
+          agroecológicos. En diálogo con los integrantes del Huerto, notamos que
+          la configuración convencional de estas relaciones responde, aún de
+          manera gentil, a un gesto cartesiano que diferencía-opone-jerarquiza
+          las vidas reunidas en el espacio, en donde, siguiendo a Bardet, se
+          articula una forma de posesión y uso, fundada en un modo de
+          conocimiento « a distancia, claro y distinto (...) que instaura esa
+          lógica racional que regula e higieniza su relación con toda
+          sensorialidad» que tiene como resultado la «(...) institución de un
+          proyecto político que busca volverse “amo y poseedor de la
+          naturaleza”».<sup><a id="fn9" href="#fnn9">9</a></sup>
+        </p>
+
+        <br />
+        <br />
+        <p>
+          El gesto queer se despliega como una acción-percepción entre humanos,
+          animales y vegetales; supone una horizontalización de las
+          subjetividades en juego y la formulación de, siguiendo a Timothy
+          Morton, contra-imaginarios corporales que reaccionan a ficciones
+          esencialistas que definen dónde empieza y dónde termina un cuerpo.<sup
+            ><a id="fn10" href="#fnn10">10</a></sup
+          >
+          Bardet propone estudiar al cuerpo como una serie de gestos<sup
+            ><a id="fn11" href="#fnn11">11</a></sup
+          >, esta estrategia queerifica, constituyendolo como un conjunto de
+          relaciones y percepciones contingentes e inestables. Proponemos que
+          las prácticas artísticas del Huerto despliegan gestos que invocan tres
+          estrategias claves para la desestabilización del gesto cartesiano:
+          ontologías hápticas, intra-acciones (Barad),
+          desorientación/dorsalización (Ahmed y Bardet), auto-experimentación
+          para la creación de nuevos planos de subjetividad (Preciado) y
+          despliegues de éticas-eróticas de cuidado (deseos del cultivo y
+          cultivos del deseo).
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Des-orientar un espacio, dorsalizar las escuchas y atender a las
+          intra-acciones. Infusiones multi-sónicas del Fernando Lomelí y el
+          Laboratorio de Gestos Agroecológicos.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Del 7 al 9 de marzo del 2023, en el Huerto Agroforestal Universitario
+          de la ENES Morelia, se llevó a cabo el montaje de la instalación
+          sonora Infusión Multi-sónica (Multisonic infusions), desarrollada por
+          el Laboratorio de Gestos Agroecológicos (integrado por los artistas
+          sonoros Fernando Lomelí y Barush Fernández Zamorano y las agroecológas
+          Ana Rojas y Alexis Rivero); producto de una estancia de trabajo con
+          estudiantes de último semestre de la Licenciatura en Música y
+          Tecnología Artística, Licenciatura en Historia del Arte y Licenciatura
+          en Arte y Diseño. Infusiones Multi-sónicas consistió en el montaje de
+          un texto curatorial acompañado por una cartografía sensible de los
+          sonidos del Huerto; así como la instalación de bocinas y sensores de
+          movimiento en una yurta para la reproducción de piezas de arte sonoro
+          producidas durante un taller impartido por el Laboratorio de Gestos
+          Agroecológicos (LGA). La pieza despliega tres gestos queer que
+          atienden a procesos concatenados desde el desarrollo de la instalación
+          sonora, hasta las estrategias de montaje y diseño de la experiencia de
+          visita de la pieza: Escuchar las relaciones, dorsalizar y desorientar
+          la escucha.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Escuchar las relaciones, es la estrategia pedagógica y el gesto queer
+          que atiende del primer proceso de conceptualización de Infusión
+          Multisónica. Los facilitadores del taller invitan a desarrollar
+          «gestos de escucha en el huerto» mediados por las siguientes
+          preguntas: «¿Cómo se escuchan los cuerpos por la presencia/ausencia
+          del agua? ¿Escuchas las contribuciones de las plantas a los animales?
+          ¿Escuchas las contribuciones de los animales a las plantas? ¿Escuchas
+          las contribuciones del agua, la luz, el aire a las plantas y a los
+          animales? ¿Escuchas las contribuciones de plantas a animales, aire,
+          agua y luz?»<sup><a id="fn12" href="#fnn12">12</a></sup> El taller
+          invitó a los alumnos a realizar visitas periódicas al Huerto en
+          diferentes horarios, con la finalidad de escuchar y atender a las
+          diferentes configuraciones sonoras dependientes del entorno ambiental.
+          Fernando Lomelí recupera en este gesto aquello que Pauline Oliveros
+          denomina como escucha profunda, una experiencia somática y de atención
+          que va más allá de una escucha contemplativa, el reto experiencial de
+          Oliveros consistía en dar cuenta de cómo los cuerpos configuraban
+          campos resonantes constituyentes de relaciones ecosistémicas.<sup
+            ><a id="fn13" href="#fnn13">13</a></sup
+          >
+          Fernando Lomelí ha llevado estos ejercicios a consideraciones de
+          ecologías políticas sonoras diferentes al protocolo del paisaje
+          sonoro. No se trata de registrar sonidos del territorio para
+          reproducirlos en ámbitos de escucha musical como composiciones
+          instrumentales de la naturaleza. Sino en generar artefactos
+          perceptivos que nos indiquen que desenvolvimientos generamos en
+          nuestras presencias, campos de fuga e incidencia nos dan forma
+          perceptiva. Lo que escuchamos es la consecuencia de nuestra presencia
+          y mediación.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Karen Barad formula la pregunta por la individualidad ontológica y
+          articula la noción de intra-acción como concepto en oposición a la
+          interacción, en donde la primera supone la inseparabilidad a priori de
+          los elementos y agentes que participan de un fenómeno; mientras que la
+          segunda impone una independencia previa de los elementos.<sup
+            ><a id="fn14" href="#fnn14">14</a></sup
+          >
+          Así, propone un giro, del análisis de los elementos constituyentes al
+          análisis del fenómeno como productor de diferencias, en tanto que el
+          ser del fenómeno precede al ser de las cosas. De esta manera, podemos
+          ver cómo, en la metodología que orienta el trabajo in situ para el
+          registro del sonido del huerto, persiste un interés por las
+          contribuciones de un cuerpo sobre otro, la escucha de gestos no
+          responde a un paradigma moderno cartesiano, en donde sujetos y objetos
+          son perfectamente delineados a partir de su autonomía de uno respecto
+          a otro,<sup><a id="fn15" href="#fnn15">15</a></sup> es más bien un
+          modo de escucha que se preocupa entonces por el cómo del sonido y no
+          el qué. Una forma de percepción que se deja tocar y que atiende a los
+          contactos (contribuciones).
+        </p>
+
+        <br />
+        <br />
+        <p>
+          El LGA convoca una pregunta por las relaciones concretas entre
+          entidades como aire, carros, perros, pájaros y otros con los cuerpos
+          de cultivo que se procuran en el huerto. Para ellxs hay una
+          constatación que podemos rastrear hasta la física cuántica: su
+          presencia en el huerto, incluso en escucha atenta, modifica las
+          relaciones sonoras y los dramas que son perceptibles y de los cuales
+          añoramos tomar como evidencia de relaciones ecosistémicas. Si su
+          presencia afecta debe ser porque también son parte de estás mismas
+          relaciones. Por lo que considerar instrumentos de mediación de la
+          experiencia sonora y de la vitalidad del huerto tendría pues que pasar
+          no por neutralizar su presencia (lo que sería jugar más al artificio
+          del paisaje sonoro) sino hacer aprehensible que no son testigos de la
+          relaciones desde un afuera perceptivo sino que lo son por ser
+          agenciamientos integrados en las tramas afectivas y materiales que
+          constituyen el huerto y al cultivo. Es entonces que, en la ecología
+          sonora del huerto, son tan relevantes las acciones de manufactura
+          humana en todos sus ámbitos como lo son las orientaciones y
+          manifestaciones de las entidades más-que-humanas que negocian su
+          coexistencia. En la búsqueda de un término que honre la
+          co-constitución del acontecimiento apareció infusión.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          En términos agrosilviculturales, la infusión es una técnica para
+          extraer los compuestos solubles de una sustancia, como hierbas,
+          especias, flores, frutas o té, mediante la inmersión de dicha
+          sustancia en agua caliente o líquido solvente en un dispositivo
+          recipiente que se convierte en la condición de posibilidad de lo
+          infusionado y participa materialmente en la configuración de lo
+          solventado. Cercano a la maceración, lo que se extrae sigue siendo un
+          ensamblaje entre el solvente y los compuestos solubles pero con
+          potencialidad de configurarse como un algo más que transforma la
+          consideración ontológica de los materiales ensamblados: el todo es
+          otra cosa que las partes. Ahora es bebida aromática, jugo u otros
+          derivados en que se resaltan sabores pero también otras posibilidades
+          de agenciamiento de la materialidad (como en los menjurjes y pócimas)
+          intensificando por densidad, composición y capacidad de absorción en
+          otros cuerpos (generalmente humanos) con consecuencia terapéuticas. En
+          el caso de la Infusión Multisónica, la propuesta iba más allá de la
+          composición de moléculas, era también una composición de energías y
+          fuerzas atendiendo su trasmutación sonora en campos e intensidades
+          perceptivas de formas auditivas.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Esta experiencia de escucha y atención es trasladada a un ejercicio de
+          composición de piezas de arte sonoro producidas por los participantes
+          del taller (Francisco Martínez Roldán, Jennifer Butanda Salinas, José
+          Luis Luengas Coutiño). Las piezas son generadas de forma individual
+          por los integrantes del taller y posteriormente montadas en la
+          instalación del Huerto en donde son mezcladas en vivo en función a la
+          detonación de tres sensores activados por la interacción de los
+          visitantes, las corrientes de viento y el nivel de humedad de la
+          tierra. Esta decisión de montaje genera un apparatus que en lugar de
+          constituir una delimitación individual de lo representado (en donde
+          los sonidos empleados y las piezas de cada uno de los alumnos son
+          discernibles uno de otro) aboga por una opacidad sonora en donde
+          creación humana, sonidos del huerto y autorías quedan enredadas. La
+          reproducción de las piezas queda supeditada a la colaboración
+          humanos-huerto-ambiente, en tanto que los sensores de movimiento son
+          detonados por estas variables.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          La experiencia de visita consistía en dos momentos indicados por los
+          artistas: ingresar a la yurta para escuchar las piezas e interactuar
+          con los sensores y, posteriormente, salir a otro espacio del Huerto
+          para escuchar por uno mismo los gestos que integran al espacio. La
+          instalación opera como un dispositivo que predispone a la escucha de
+          las sonoridades orgánicas/ambientales que se ensamblan dentro del
+          huerto. Cuando el cuerpo humano sale de la yurta para disponer una
+          escucha orgánica y no mediada por tecnologías de sonido, se agudiza la
+          escucha, se vuelven perceptibles elementos sonoros antes ignorados, se
+          desorienta el habitaje cotidiano del espacio.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Infusiones invita a desorientar la relación preestablecida entre
+          espacios y acciones. Proponiendo espacios de escucha, se reconfiguran
+          momentáneamente las relaciones del cuerpo humano hacia el espacio del
+          Huerto. Así se explicita el estado contingente de los cuerpos y los
+          huerto, en tanto que en la escucha del segundo la corporalidad
+          adquiere otra disposición y se revela una constitución inexplorada del
+          espacio. Siguiendo a Sarah Ahmed, podemos decir que se explicita la
+          manera en la que « The question of action is a question then of how we
+          inhabit space. (...) A ‘corporeal’ or postural schema gives us a
+          global, practical and implicit notion of the relation between our body
+          and things,and our hold of them.»<sup
+            ><a id="fn16" href="#fnn16">16</a></sup
+          >
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Estar a la escucha de las contribuciones es una forma de redireccionar
+          el habitaje del Huerto, instaurando nuevas posiciones entre los
+          cuerpos. A partir de un gesto, indica Bardet haciendo recuento de
+          diversos talleres de creatividad corporal impartidos por ella y Moyi
+          Schwatzer, se pueden formular «Nuevas relaciones
+          corporeidad/espacialidad/temporalidad.»<sup
+            ><a id="fn17" href="#fnn17">17</a></sup
+          >
+          Como gesto, la desorientación de la escucha implica habilitar, a
+          partir del desplazamiento del cuerpo por el Huerto y su interacción
+          con la instalación, un tipo de sensibilidad perceptiva que no ignora a
+          aquellos sonidos que ya existían pero que eran descartados por un modo
+          de percepción hegemónico dominado por una sensorio frontal, focal,
+          central,<sup><a id="fn18" href="#fnn18">18</a></sup>
+          desplazándose hacia una escucha que no es pasiva en tanto que habilita
+          atenciones, y tampoco es una forma de percepción
+          taxonomista-individualizante, en tanto que se interesa por el sonido
+          como una intra-acción entre cuerpos. Una escucha tocante que queda
+          establecida en el último dispositivo de la instalación, una
+          cartografía sonora diseñada por Carlos Castro, en donde se representan
+          las sonoridades tomando en cuenta las variables
+          espacio-tiempo-temperatura; así, se descarta la posibilidad de una
+          escucha que responde únicamente a un sentido perceptivo; la escucha se
+          revela como condicionada por la disposición del cuerpo que escucha y
+          su afectación ecosistémica.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Asombrarse para desorientar relaciones entre objetos y cuerpo.
+          Compartencia de Griselda Sánchez. Del 29 al 31 de marzo de 2023 se
+          lleva a cabo la comparrencia facilitada por Griselda Sánchez. El
+          término es acuñado por el antropólogo oaxaqueño Jaime Luna para
+          referir a un modelo organizativo comunitario que se opone a la
+          competencia, apela al intercambio y la complementariedad, diversa y
+          recíproca.<sup><a id="fn19" href="#fnn19">19</a></sup> Para una
+          posible traducción, compartencia se compone por dos partículas:
+          compartir (to share) y competencia, procedente de la voz latina
+          competĕre, que significa encontrarse, coincidir (to gather). Sánchez
+          invita a los participantes, los compartientes, a desarrollar gestos
+          que les permitan asombrarse. Rachel Carson, en The Sense of Wonder,
+          nos invita a asombrarnos, es decir, a explorar la naturaleza siendo
+          receptivos a lo que nos rodea, des-aprender a usar los sentidos
+          perceptivos para dar paso a canales sensoriales en desuso.<sup
+            ><a id="fn20" href="#fnn20">20</a></sup
+          >
+          Las intuiciones de Carson, una bióloga marina por formación, nos
+          recuerda a la fenomenología queer de Ahmed y la posibilidad de
+          desorientar el sensorio para producir otras relaciones entre cuerpos y
+          objetos.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Sánchez consigna a los compartientes a explorar el Huerto en búsqueda
+          de materiales para imaginar en colectivo formas de detonar sonidos.
+          Quienes participamos del gesto, nos vemos involucrados a imaginar qué
+          formas de tacto y contacto con los materiales pueden producir ciertas
+          sonoridades. Cada quien selecciona un material e imprime en él cierta
+          acción para detonar un sonido. Después de recorrer el huerto y
+          seleccionar materiales del huerto, nos reunimos para compartir con los
+          demás las estrategias detonantes que encontramos; posteriormente,
+          cedemos los objetos para que otras personas los toquen e indicamos la
+          disposición corporal y el tacto encontrado para detonar un sonido
+          específico. Compartimos sonoridades, insistiendo en que la cualidad de
+          esta es dependiente de una forma de accionar la relación
+          objeto-sujeto.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Ahmed sugiere que la aparición de propiedades y la forma de ser de un
+          objeto depende de la orientación que el sujeto adquiere en relación
+          con él.<sup><a id="fn21" href="#fnn21">21</a></sup> Esto indica que no
+          existen identidades fijas sino disposiciones y relaciones particulares
+          objeto-sujeto; esto toma forma con el ejercicio propuesto por Sánchez.
+          Insistir en que las sonoridades son humanamente producidas a partir
+          del tacto implica también una reconfiguración de los imaginarios de
+          corporalidad dados. Un contacto entre objeto y cuerpo es una forma de
+          orientación, por lo que los cuerpos, nos dice Ahmed, «take shape
+          through being orientated [being touched]».<sup
+            ><a id="fn22" href="#fnn22">22</a></sup
+          >
+        </p>
+
+        <br />
+        <br />
+        <p>
+          El contacto, a la vez que configura los cuerpos, dotándolos de
+          propiedades efímeras durante la intra-acción de una
+          relación-orientación; también permite generar enredos y diferenciar
+          cuerpos. Regresando a Barad, se reconoce entonces que un contacto es
+          una intra-acción a través de la cual la materialidad de los
+          cuerpos-objetos inmersos en ella se co-constituyen. Barad nos recuerda
+          que «touching, sensing, is what matter does, or rather, what matter
+          is: matter is condensations of responses, of response-ability.».<sup
+            ><a id="fn23" href="#fnn23">23</a></sup
+          >
+          El contacto vuelve explícita la indeterminación ontológica de las
+          materias y los cuerpos humanos; haciéndo de estas agencias
+          necesariamente queer.<sup><a id="fn24" href="#fnn24">24</a></sup>
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Codificar y descodificar (reimaginar) un cuerpo a través de ataduras y
+          enredos. Encuentros matéricos en el huerto de Vanessa Rivero.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Encuentros matéricos en el huerto (Material Encounters In The Garden),
+          el taller artístico presentado por Vanessa Rivero el 12 de agosto de
+          2023 en el marco de su colaboración con el Huerto Agroforestal. Para
+          su intervención, Rivero invita a los participantes a recorrerlo
+          buscando materialidades que les inviten a activar otras formas de
+          sentido y percepción. Rivero insiste en una política del detalle de
+          aquello que pasa desapercibido para la composición de ensamblajes
+          inesperados. Posterior a la búsqueda, los participantes realizan en
+          colectivo ejercicios de tacto para así reformular las intenciones y
+          sus prejuicios hápticos. Por último, haciéndose de trozos de cuerda
+          repartidos entre los asistentes, se configuran primero en solitario y
+          después en colectivo diversas esculturas que tienen como soporte el
+          cuerpo humano. Los asistentes atan a sí aquellos materiales
+          encontrados para formular preguntas en torno a las codificaciones del
+          cuerpo y el reparto de los apoyos gravitacionales.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Los participantes del taller son invitados a explorar qué formas de
+          movimiento pueden ser detonadas a partir de la auto-intervención. Lo
+          anterior nos recuerda al recuento de los talleres Drag King impartidos
+          por Paul Preciado, invitando a los participantes del taller a probarse
+          packings, realizarse aplanamientos del pecho y cortar mechones de
+          cabello para producir vello facial. A partir de estas maniobras, “[se
+          modifica] el eje corporal y el equilibrio que se establece entre los
+          hombros, los brazos y las piernas.”<sup
+            ><a id="fn25" href="#fnn25">25</a></sup
+          >
+          Bardet, pensando en la redistribución de los pesos ocurrida durante la
+          improvisación en danza, sugiere que esta produce “una diferenciación
+          subjetiva en curso: rolar, repartir los pesos en el cuerpo y
+          experimentar una continuidad cambiante, un proceso, un devenir
+          otro.”<sup><a id="fn26" href="#fnn26">26</a></sup> En ambos casos,
+          ocurre una des-orientación en palabras de Bardet refiriendo al trabajo
+          de Ahmed.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Sumado a esto, los participantes son invitados a crear breves
+          narraciones que explican las decisiones de modificación corporal,
+          permitiendo que la autopercepción mute. Entre los participantes surgen
+          propuestas diversas que van desde la imaginación de cuerpos híbridos
+          hasta la descripción de la personalidad individual a partir de los
+          elementos materiales que le integran. Parafraseando a Preciado, lo que
+          ocurre aquí es una toma de conciencia colectiva respecto a las
+          ortopedias culturales-ambientales, generando desidentificaciones<sup
+            ><a id="fn27" href="#fnn27">27</a></sup
+          >
+          con respecto a un imaginario del cuerpo como autónomo y en distancia
+          con el huerto. Permitiendo así integrar una intuición ecológica a lo
+          que Esteban Muñoz denomina como desidentificación, tejiendo un
+          continúo entre los sistemas simbólicos heteronormativos, supremacistas
+          blancos y misóginos<sup><a id="fn28" href="#fnn28">28</a></sup> y las
+          formas de dominio de la naturaleza del pensamiento moderno. Los
+          individuos del taller proponen contraimaginarios de un cuerpo,
+          abigarrándolo de materialidades, optando por resignificar a través de
+          codificaciones y ficciones personales que insuflan otras vidas y otras
+          modos de ser a un cuerpo afectado por las materialidades del huerto..
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Para desarrollar estas esculturas, se hace uso de una cuerda para
+          producir nudos y enredos entre el cuerpo humano y los cuerpos
+          matéricos del huerto. En un primer momento, hace eco de L’abre i
+          l’home. Lligada a l’abre, (The tree and the man. Tied to a tree), una
+          fotoacción de Fina Miralles que, como su nombre lo indica, consiste en
+          atarse a un árbol y explorar la relación que dicha acción produce. A
+          través de este gesto, se vuelve literal aquello que implica un enredo
+          (entanglement) en el sentido que Karen Barad lo explora, un enredo que
+          no supone “(...) to blur the boundaries between human and non human,
+          not to cross out all distinctions and differences, and not to simply
+          invert humanism, but rather, to understand the materializing effects
+          of particular ways of drawing boundaries between “humans” and “non
+          humans””<sup><a id="fn29" href="#fnn29">29</a></sup> . Experimentar a
+          partir de la atadura la posibilidad de estar junto-separado de otro
+          cuerpo, experimentar, a partir de una atadura colectiva, mano con
+          mano, piel con piel, la posibilidad de devenir un cuerpo común y
+          diferente. En palabras de Bardet, leyendo a Barad, se desconoce «(...)
+          la oposición estricta, binaria y lógica, entre quién es unx y quien es
+          otrx, lo que está antes y lo que está después, lo que está adentro y
+          afuera, lo que es dar y lo que es recibir.»<sup
+            ><a id="fn30" href="#fnn30">30</a></sup
+          >
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Deseos de cultivo y cultivo del deseo. Gestos queer y la reformulación
+          de una relación a posteriori con el Huerto.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Atender al sonido de un huerto sin buscar categorizar, sino
+          reconociendo la intra-acción que le constituye. Atender a un objeto
+          inerte y explorar otras formas de relación entre el cuerpo y el objeto
+          para producir sonoridades inesperadas. Atender a las materialidades de
+          un huerto y generar ataduras complejas para experimentar otras formas
+          gravitacionales del cuerpo y recodificar significantes de la relación
+          naturaleza-cultura. Estos gestos queer tienen como principio una
+          política de atención (atención que es en sí misma un gesto) que
+          permite suspender, durante la duración de un taller, una instalación o
+          una compartencia, las formas de producción de un Huerto. El Huerto
+          Agroforestal Universitario, que en sí mismo ya opera bajo una ética de
+          intervención misma y de no explotación del terreno/territorio, se
+          convierte en un laboratorio de gestos que permitan reorientar,
+          dislocar y reconfigurar momentáneamente un ritmo de producción. Lo
+          anterior, nos permite insistir en la importancia del desarrollo de
+          artes de prestar atención, como lo explica Isabelle Stengers. Frente a
+          un mundo indócil afianzado enceguera y la rápidez del pensamiento para
+          fines productivos-extractivos, habría entonces que insistir en la
+          posibilidad de ralentizar, de deconstruir prejuicios hápticos y
+          auditivos; para insistir en la vitalidad y la importancia de aquello
+          que forma parte de los ecosistemas.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Omar Felipe Giraldo e Ingrid Toro encuadran el debate agroecológico en
+          México a partir de dos gestos: empatizar y afinar los sentidos. Supone
+          que son las colectividades que se responsabilizan del cultivo las que
+          encuentran las composiciones estéticas convenientes, apropiadas y
+          proporcionales.<sup><a id="fn31" href="#fnn31">31</a></sup> Estas
+          empatías y afinaciones, son gestos movilizadores de formas de cultivo
+          no centradas en la producción, sino en la cohabitación del territorio
+          en términos gentiles. Sugerimos que estos principios son ingenuos ante
+          el legado colonial y moderno de aquello que se nombra estético;
+          siguiendo a Bardet, encontramos que apelar por imaginarios de lo
+          apropiado, lo conveniente y lo proporcional atiende al gesto
+          cartesiano que diferencía-opone y jerarquiza lo perceptible.<sup
+            ><a id="fn32" href="#fnn32">32</a></sup
+          >
+          Hablamos entonces de generar eróticas y espacios de deseo perverso con
+          el Huerto, explorando otro temperamento de una relación previamente
+          establecida. Cultivar el deseo de cultivo a través de experiencias
+          gestuales que revitalizan la experiencia del espacio y traen atención
+          a aquello comunmente ignorado. Como ha quedado explicado en el texto,
+          se necesita de un gesto necesariamente queer para hacer que florezcan
+          otras formas de acercamiento, de contacto y de intercourse.
+        </p>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p>Referencias</p>
+        <p id="referencias">
+          <br />
+          <a id="fnn1" href="#fn1">1.</a> Huerto Agroforestal Universitario
+          ENES, UNAM: Nuestra historia, in: Huerto Agroforestal Universitario
+          ENES, UNAM, https://www.huertounam.com/, last accessed 14.12.2023.
+          <br />
+          <br />
+          <a id="fnn2" href="#fn2">2.</a> Fernando Aldair Valencia Vázquez:
+          Agrosilvi-culturas-meteorológicas enuna ciudad intermedia:Análisis de
+          la adaptación ante el cambio climático en Morelia,Michoacán,México,
+          licenciate thesis, National Autonomous University of México (UNAM),
+          Morelia, 2023.
+          <br />
+          <br />
+          <a id="fnn3" href="#fn3">3.</a> André-Georges Haudricourt:
+          Domestication des animaux, culture des plantes et traitement d'autrui,
+          in: L'Homme, 1962, T. 2, No.1, p. 40-50. Online:
+          https://doi.org/10.3406/hom.1962.366448, as of December, 19, 2023.
+
+          <br />
+          <br />
+
+          <a id="fnn4" href="#fn4">4.</a> Marie Bardet: Hacer mundos con gestos,
+          in: Marie Bardet (ed.): El Cultivo de los gestos, entre plantas,
+          animales y humanos. Buenos Aires: Cactus 2019, p. 81-111, here p. 89.
+          <br />
+          <br />
+
+          <a id="fnn5" href="#fn5">5.</a> Marie Bardet: Pensar con mover, Cactus
+          2012, p. 134 and 144
+
+          <br />
+          <a id="fnn6" href="#fn6">6.</a> Marie Bardet: Saberes gestuales.
+          Epistemologías, estéticas y políticas de un «cuerpo danzante», in:
+          Enrahonar. An International Journal of Theoretical and Practical
+          Reason 60, 2018, p. 13-28, here p. 22 Online:
+          https://doi.org/10.5565/rev/enrahonar.1206 , as of December 19, 2023.
+          <br />
+          <br />
+          <a id="fnn7" href="#fn7">7.</a> Bardet 2019 (as Note 2), here p. 96.
+
+          <br />
+          <br />
+
+          <a id="fnn8" href="#fn8">8.</a> Karen Barad: Nature’s Queer
+          Performativity, in Qui Parle 19, No.19, 2011, p. 121-158, here p. 126.
+          Online: https://doi.org/10.5250/quiparle.19.2.0121, as of December 19,
+          2023.
+          <br />
+          <br />
+          <a id="fnn9" href="#fn9">9.</a> Marie Bardet: Perder la cara. Buenos
+          Aires: Cactus, 2021, p. 27 and 29.
+
+          <br />
+          <br />
+          <a id="fnn10" href="#fn10">10.</a> Timothy Morton: Queer Ecology, in:
+          PML 125, No. 2, 2010, p. 273-282, here p. 273 and 280.
+          <br />
+
+          <br />
+          <a id="fnn11" href="#fn11">11.</a> Bardet 2019 (as Note 2), here p.
+          108.
+
+          <br />
+          <br />
+
+          <a id="fnn12" href="#fn12">12.</a> Fernando Lomelí: Gestos
+          agroecológicos. Laboratorio de investigación/creación, Youtube.
+          Online:
+          https://www.youtube.com/watch?v=32SfcZXNZEM&ab_channel=VisionesSonoras,
+          as of 19.12.2023.
+
+          <br />
+          <br />
+          <a id="fnn13" href="#fn13">13.</a> Pauline Oliveros: Deep listening:
+          una práctica para la composición sonora. Buenos Aires: Dobra Robota
+          Editora, 2019.
+
+          <br />
+          <br />
+          <a id="fnn14" href="#fn14">14.</a> Karen Barad: Meeting the Universe
+          Halfway. Quantum Physics and the Entanglement of Matter and Meanig,
+          Duke University Press, 2007, p. 139.
+
+          <br />
+          <br />
+          <a id="fnn15" href="#fn15">15.</a> Barad, 2007 (as note 14), p.140
+
+          <br />
+          <br />
+          <a id="fnn16" href="#fn16">16.</a> Sarah Ahmed: Queer Phenomenology.
+          Orientations, Objects, Others. Durham/London: Duke University Press,
+          2006. p. 58 and 53.
+
+          <br />
+          <br />
+          <a id="fnn17" href="#fn17">17.</a> Marie Bardet: Perder la cara.
+          Cactus, 2021. p. 183.
+          <br />
+
+          <br />
+          <a id="fnn18" href="#fn18">18.</a> Bardet, 2021 (as note 14). Here p.
+          176.
+
+          <br />
+          <br />
+
+          <a id="fnn19" href="#fn19">19.</a> Jaime Luna: Eso que llaman
+          comunalidad. Culturas Populares, CONACULTA/Secretaría de Cultura,
+          Gobierno de Oaxaca/Fundación Alfredo Harp Helú Oaxaca, AC, 2009.
+          p.128.
+
+          <br />
+          <br />
+          <a id="fnn20" href="#fn20">20.</a> Rachel Carson: El sentido del
+          asombro (e-book). Ediciones Encuentro, 2012. Hay preguntas y trazos
+          que hemos podido trazar gracias a mujeres lesbianas y hombres trans.
+
+          <br />
+          <br />
+          <a id="fnn21" href="#fn21">21.</a> Ahmed, 2006. (As note 13) Here p.
+          50 and 51.
+
+          <br />
+          <br />
+          <a id="fnn22" href="#fn22">22.</a> Ahmed, 2006 (as note 13). Here p.
+          54.
+
+          <br />
+          <br />
+          <a id="fnn23" href="#fn23">23.</a> Karen Barad:
+          Trans*/Matter/Realities and Quees Political Imaginings, in: GLQ: A
+          Journal of Lesbian and Gay Studies 21, 2015, No.2-3, p. 387-422, here.
+          400.
+
+          <br />
+          <br />
+          <a id="fnn24" href="#fn24">24.</a> Karen Barad: Tocando al extrañx
+          interior. Buenos Aires: Cactus, 2023, p.28.
+
+          <br />
+          <br />
+          <a id="fnn225" href="#fn25">25.</a> Paul Preciado: Testo Yonqui. Sexo,
+          drogas y biopolítica. Barcelona: Anagrama 2020, p.267.
+
+          <br />
+          <br />
+          <a id="fnn26" href="#fn26">26.</a> Bardet: Pensar con mover, 2012. p.
+          101.
+
+          <br />
+          <br />
+          <a id="fnn27" href="#fn27">27.</a> Paul Preciado: Testo Yonqui. Sexo,
+          drogas y biopolítica. Barcelona: Anagrama 2020, p.267.
+
+          <br />
+          <br />
+          <a id="fnn28" href="#fn28">28.</a> José Esteban Muñoz:
+          Disidentifications. Queers of Color and the Performance Politics.
+          Minneapolis, London: University of Minnesota Press, 1999, p. 5.
+
+          <br />
+          <br />
+          <a id="fnn29" href="#fn29">29.</a> Karen Barad: “Nature’s
+          QueerPerformativity”. In Qui Parte Spring/Summer 2011 Vol 19. No.2
+          121-158 pp, 123-124.
+
+          <br />
+          <br />
+          <a id="fnn30" href="#fn30">30.</a> Marie Bardet: M/e toca. En Karen
+          Barad, Tocando al extrañx interior.Buenos Aires: Cactus, 2023. p. 67.
+
+          <br />
+          <br />
+          <a id="fnn31" href="#fn31">31.</a> Omar Felipe Giraldo and Ingrid
+          Toro: Afectividad ambiental: sensibilidad, empatía, estéticas del
+          habitar. Chetumal: Colegio de la Frontera Sur/ Universidad
+          Veracruzana, 2020, p. 16.
+
+          <br />
+          <br />
+          <a id="fnn32" href="#fn32">32.</a> Bardet: Perder la cara
+        </p>
+
+        <br />
+        <br />
+        <br />
+
+        <img
+          id="logos"
+          src="https://lh3.googleusercontent.com/d/1H_03ipyzEqmHnEQn1aA22j72Pjqzgk-i=w1020?authuser=0"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Labrada:wght@400;500&display=swap");
+html {
+  font-size: 16pt; /* 100% = 16px */
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  background-color: #1e7967;
+}
+
+.sidebar {
+  color: white;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0%;
+  background-color: rgb(30, 121, 103, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 27px;
+}
+
+.sidebar .lista {
+  height: 7%;
+  padding: 6% 0 6% 0;
+  font-weight: normal;
+  font-family: "Labrada", serif;
+  font-size: 30px;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+  line-height: 4vh;
+}
+
+.sidebar .lista:hover {
+  background-color: #94b598;
+}
+
+.openbtn,
+.back {
+  font-size: 50px;
+  cursor: pointer;
+  color: white;
+  padding: 0px;
+  border: none;
+}
+
+.openbtn {
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 20;
+  left: 95%;
+  top: 5%;
+}
+
+.back {
+  display: none;
+}
+
+.back:hover {
+  background-color: #444444;
+}
+
+#main {
+  transition: margin-left 0.05s;
+  padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 50% 50%;
+}
+
+.page div {
+  color: white;
+}
+.one {
+  padding: 3.5vh 0px 0px 1.171875vw;
+  grid-column: 1/2;
+  grid-row: 1/1;
+  background-color: #26a5a3;
+}
+.two {
+  padding: 3.5vh 0px 0px 1.171875vw;
+  grid-column: 2/3;
+  grid-row: 1;
+  background-color: #1e7967;
+}
+.three {
+  padding: 3.5vh 0px 0px 1.171875vw;
+
+  grid-column: 3/4;
+  grid-row: 1;
+
+  background-color: #2b9d63;
+}
+.four {
+  padding: 3.5vh 0px 0px 1.171875vw;
+
+  grid-column: 4/5;
+  grid-row: 1;
+
+  background-color: #1e7967;
+}
+
+.five {
+  padding: 1.875vh 0px 0px 1.171875vw;
+
+  grid-column: 1/2;
+  grid-row: 2;
+
+  background-color: #1e7967;
+}
+.six {
+  padding: 1.875vh 0px 0px 1.171875vw;
+
+  grid-column: 2/3;
+  grid-row: 2;
+
+  background-color: #2b9d63;
+}
+.seven {
+  padding: 1.875vh 0px 0px 1.171875vw;
+
+  grid-column: 3/4;
+  grid-row: 2;
+
+  background-color: #1e7967;
+}
+
+.eight {
+  padding: 1.875vh 0px 0px 1.171875vw;
+
+  grid-column: 4/5;
+  grid-row: 2;
+
+  background-color: #26a5a3;
+}
+
+
+.pexp {
+  font-size: 1.45vw;
+  font-family: "Labrada", sans-serif;
+  padding: 0px;
+  margin: 0 0vw 0px 0px;
+}
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.one:hover {
+  background-image: url("https://cdn.glitch.global/9755629d-6749-46dc-b70c-6cd7c5b2afc2/CRTL_COMPARTENCIA.png?v=1709540337992");
+  background-size: 100% 100%;
+  color: transparent;
+}
+
+.two:hover {
+  background-image: url("https://cdn.glitch.global/9755629d-6749-46dc-b70c-6cd7c5b2afc2/Laboratorio_Cultivar%20los%20gestos%20con%20gestos%20de%20cultivo.png?v=1710629509517");
+  background-size: 100% 100%;
+  color: transparent;
+}
+
+.three:hover {
+  background-image: url("https://cdn.glitch.global/9755629d-6749-46dc-b70c-6cd7c5b2afc2/CARTELES_VERSIONES5.jpg?v=1709540215872");
+  background-size: 100% 100%;
+  color: transparent;
+}
+
+.four:hover {
+  background-image: url("https://cdn.glitch.global/9755629d-6749-46dc-b70c-6cd7c5b2afc2/BORDADO_06.jpg?v=1709540212118");
+  background-size: 100% 100%;
+  color: transparent;
+}
+
+.five:hover {
+  background-image: url("https://cdn.glitch.global/9755629d-6749-46dc-b70c-6cd7c5b2afc2/HDELASCOSAS.jpg?v=1709540213217");
+  background-size: 100% 100%;
+  color: transparent;
+}
+
+.six:hover {
+  background-color: #444444;
+}
+
+
+.seven:hover {
+  background-color: #444444;
+}
+
+
+
+.eight:hover {
+  background-color: #444444;
+}
+
+
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+#bar{
+  font-size: 2.8125vw;
+  font-weight: lighter;
+  font-family: "Labrada", serif;
+  padding: 0px;
+    font-style: normal;
+  margin: 0 0 6vw 2vw;
+}
+

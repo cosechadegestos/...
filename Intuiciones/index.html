@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Compartencia/style.css" />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+
+    <div id="mySidebar" class="sidebar">
+      <h2 id="bar">
+        <a href="/">Cosecha de<br />Gestos</a>
+      </h2>
+
+      <a class="lista" href="Experiencias">EXPERIENCIAS</a>
+      <a class="lista" href="Laboratorio GA"
+        >LABORATORIO DE GESTOS AGROECOLÓGICOS</a
+      >
+      <a class="lista" href="Debate Pedagógico">DEBATE PEDAGÓGICO</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="oopenNav()">☰</button>
+      <button class="back" id="back" onclick="back(bb)">&#60;</button>
+      <div id="page">
+        <h3>
+          <a href="index.html">
+            Cosecha
+            <br />
+            de Gestos
+          </a>
+        </h3>
+        <h1>Intuiciones Ambientales</h1>
+        <br />
+        <br />
+        <br />
+
+        <p class="autoria">
+          Presentación por José Imanol Basurto Lucio,
+
+          <br />
+          estudiante de Historia del Arte de la Escuela Nacional
+          <br />
+          de Estudios Superiores Unidad Morelia.
+        </p>
+        <br />
+        <br />
+        <br />
+
+        <p>
+          Intuiciones Ambientales es un seminario internacional para el
+          intercambio y difusión de saberes artísticos, teóricos y estéticos
+          acerca de las posibles relaciones entre debates ambientales-ecológicos
+          y producción artística. El seminario tendrá una duración preliminar de
+          un año y contará con invitados nacionales e internacionales.
+        </p>
+        <br />
+        <br />
+        <p>
+          A la fecha se han realizado dos sesiones del mismo, que han contado
+          con la participación del Dr. Jaime Vindel presentando una reflexión en
+          torno a las relaciones entre prácticas artísticas, industrias
+          energéticas y crisis ambiental. Asimismo, se tuvo una discusión en
+          plenaria moderada por Oswaldo Marchionda; en la que participaron Nilka
+          Nereida Solorzano, Nuria Hernández Olivera y Marcos Benitez, artistas
+          que trabajan en continuidad y cercanía con saberes ancestrales en
+          comunidades indígenas vinculados al cuidado y cultivo de plantas.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          En los próximos meses se llevarán a cabo más encuentros en los que
+          participarán artistas y agroecológos como Coyocalicatzin Hernández
+          Solorzano, Fernando Lomelí Bravo, el colectivo Agroecológas en
+          Movimiento, Colectivo Awentane, Arnaud García, Marcela Armas,
+          Colectivo TRES, entre otros.
+        </p>
+
+        <br />
+        <br />
+        <p>
+          Las sesiones del seminario toman lugar de forma online y son
+          transmitidas en el canal de Youtube del mismo:
+          https://www.youtube.com/@IntuicionesAmbientales2024.
+        </p>
+
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://drive.google.com/thumbnail?id=1C5301Y3iuTULgg9_hXcDe9lElCSeGzb_&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1ydUeAXopXvI32u5xXC08kkv3hqNIqvFF&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1C9S3hRjcFXFpjYoP1KBjiva6-ht9n90B&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=11rLfYI3jojdizF7IXGm4z3kb-4gLYHgS&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=11tB_O9U4csOixPXpWXOjEvicP6EmVCJe&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=11tNgEXC0fsyBGHndLD22RUHCzV8nHGfG&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=11uFvvbt-_Zh18UOzAalTV-vByS99CVtX&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=11vo0FKEiJpGeg-gxUaLp_t4c83owNjUe&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+        <iframe src="https://www.youtube.com/embed/fyDpnZuihd8"></iframe>
+
+        <p class="creditos">
+          Conferencia Magistral Culturas Fósiles
+          <br />
+          <br />
+
+          En esta conferencia magistral, Jaime Vindel nos comparte los debates
+          centrales de sus libros: Estética fósil (2020) y Cultura fósil (2023),
+          en ambos textos cuestiona la cultura visual de los procesos
+          energéticos y la hegemonía productivista. Asimismo, presentó dos
+          bloques temáticos: Modernidad fósil-cultural-colonial y la relación
+          entre Modernidad energética-cultural-política.
+
+          <br />
+          <br />
+
+          16 de Febrero de 2024
+          <br />
+          Jaime Vindel
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/FFZRWZ_w3VM"></iframe>
+
+        <p class="creditos">
+          Saberes Territorializados y Creación Artística
+          <br />
+          <br />
+
+          En este debate, nos acompaña Marcos Benítez, quien nos presenta su
+          Proyecto Herbolario / Poha Ñana. Después, Nuria Hernández Olivero y
+          Nilka Nereida Solorzano nos comparten sus experiencias en su proyecto
+          comunitario Pedagogía de la oralidad. Ambas propuestas dialogan sobre
+          su proceso de constitución como proyectos artísticos, así como su
+          impacto político en el territorio.
+
+          <br />
+          <br />
+
+          6 de Marzo de 2024
+          <br />
+          Nilka Nereida Solorzano, Nuria Hernández Olivera y Marcos Benítez
+          <br />
+          Presenta: Oswaldo Marchionda
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/GFwJW10ZjX0"></iframe>
+
+        <p class="creditos">
+          Resonancias del Territorio
+          <br />
+          <br />
+          En este debate, nos acompaña Coyolicatzin Hernandez Solórzano, quien
+          nos comparte su proyecto musical y la relación con su voz como
+          territorio político. Después, Fernando Lomelii Bravo nos habla sobre
+          Escuchar-con el territorio y propone una práctica de escucha más allá
+          de la hegemonía humana. Para finalizar, Griselda Sánchez nos habló
+          sobre el concepto de compartencia. Estas prácticas dialogan y
+          establecen relaciones simbióticas.
+          <br />
+          <br />
+          3 de Abril de 2024
+          <br />
+          Coyolicatzin Hernández Solorzano y Fernando Lomelí Bravo
+          <br />
+          Presentan: Barush Fernández e Imanol Basurto.
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/0uSK591uj3Y"></iframe>
+
+        <p class="creditos">
+          Tejer en Colectivo
+          <br />
+          <br />
+
+          En este debate, nos acompaña Ana Lilia Torres, quien nos habla sobre
+          su colectiva Agroecología en Movimiento y sobre su libro Bordando
+          Saberes y alternativas para la agroecología. Después, el Colectivo
+          Awentanel, comparte sus prácticas agroecológicas y sus contribuciones
+          comunitarias en Yucatán. Para finalizar, Vanessa Rivero nos comparte
+          su proyecto Terrario Sitpach y su práctica artística. El diálogo se
+          relaciona desde el territorio y el acto de compartir.
+
+          <br />
+          <br />
+
+          17 de Abril de 2024
+          <br />
+          Agroecólogas en Movimiento, Vanessa Rivero y Colectivo Awentanel
+          <br />
+          Presenta: Silvia Margarita Carrillo
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/c_g1UDozWJY"></iframe>
+
+        <p class="creditos">
+          Siembras para la reproducción de la vida.
+
+          <br />
+          <br />
+
+          En este debate, María Fernanda Cartagena nos comparte sobre la
+          curaduría del proyecto Plantas de poder. Después, Diana Barquero Perez
+          presentó su proyecto de investigación artística Silencio en el campo.
+          Continuando con, Arnaud Garcia sobre el concepto de alfabetismo
+          ecológico con Cultiva. Y para finalizar, Marcela Armas compartió sobre
+          sus proyectos artísticos relacionados con las tecnologías desde una
+          perspectiva crítica.
+
+          <br />
+          <br />
+
+          15 de Mayo de 2024
+          <br />
+
+          Ma. Fernanda Cartagena, Diana Barquero Pérez, Arnaud García y Marcela
+          Armas
+          <br />
+          Presenta: Diana Trevilla
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/zFTV7ZrT-vc"></iframe>
+
+        <p class="creditos">
+          Danzar lentamente en los márgenes riosiduales
+          <br />
+          <br />
+
+          En este debate, la Colectiva TRES (Ilana Boltvinik + Rodrigo Viñas)
+          nos presenta su video Torres del silencio y comparten su experiencia
+          situada en el Río Rímac. En su trabajo busca interconexiones con todos
+          los tipos de vida, centrándose en las aguas/vidas residuales y su
+          proceso de investigación de los gallinazos, construyen relaciones
+          ecosistémicas.
+
+          <br />
+          <br />
+
+          12 de Junio de 2024
+          <br />
+
+          Ilana Boltvinik + Rodrigo Viñas (Colectivo TRES)
+          <br />
+          Presenta: Fernando Lomelí Bravo
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/ReQw42ce5kI"></iframe>
+
+        <p class="creditos">
+          Corporalidades y vidas
+          <br />
+          <br />
+          En este debate, Alexis Rivero nos comparte su reflexión sobre los
+          cuidados y relaciones con la vida, también sobre el potencial creativo
+          para manejar la crisis ambiental. Después María Magdalena Espinosa nos
+          comparte sobre su experiencia como partera, su trabajo con las plantas
+          medicinales y la importancia de cuidar y conocer sobre ellas. Ambas
+          experiencias dialogan sobre la integración del territorio y las
+          posibilidades de sentir.
+
+          <br />
+          <br />
+
+          28 de Agosto de 2024
+          <br />
+
+          Alexis Rivero y María Magdalena Espinosa
+          <br />
+          Presenta: Ivett Peña Azcona
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/l4f3US7txhs"></iframe>
+
+        <p class="creditos">
+          Complicidades con las Plantas
+          <br />
+          <br />
+          En este debate, Christina Ochoa nos presenta su proyecto Farmacom es
+          un estudio sobre la herbolaria mexicana, después Zoitsa Noriegoa nos
+          habla sobre la intuición, su relación con las plantas y cómo
+          interviene en su creación artística. Para finalizar, Jorge Menna nos
+          habla de su trabajo Urtica Dioica. Se convierte en un diálogo sobre
+          relaciones con el territorio y las plantas.
+
+          <br />
+          <br />
+
+          18 de Septiembre de 2024
+          <br />
+
+          Zoitsa Noriega, Jorgge menna y Christina Ochoa
+          <br />
+          Presenta: Adriana Cancio
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/DbQz0JDlEXE"></iframe>
+
+        <p class="creditos">
+          Estéticas, comunidad y saberes situados
+          <br />
+          <br />
+
+          En este debate, Sebastián Lomelí nos habla sobre Estética ambiental,
+          propone una epistemología situada. Continua, Valentina H. Martínez con
+          su proyecto Desarticulación de la maquinaria antropogénica a través
+          del cuidado y la defensa del territorio. Después, Eduardo Molinario
+          propone un arte situado y, para finalizar, con Juan Sebastian Lach nos
+          comparte sobre su trabajo de creatividad situada. El debate concluye
+          reflexionando sobre el lugar de las creaciones micropolíticas.
+
+          <br />
+          <br />
+
+          16 de Octubre de 2024
+          <br />
+
+          Sebastián Lomelí Bravo, Juan Sebastián Lach, Valentina Hincapié y
+          Eduardo Molinari
+          <br />
+          Presenta: José Imanol Basurto
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/_zz-pYI6x7M"></iframe>
+
+        <p class="creditos">
+          Zambullirse en lo inapropiable
+          <br />
+          Activaciones alrededor de algunas experiencias de Elena Lucca
+          <br />
+          <br />
+          En esta sesión, Paulina Varas, Fernanda Carvajal, Licia Esperanza
+          Bianchi, Javiera Manzi y Elena Lucca, nos comparten sobre su proyecto
+          colectivo Zambullirse en lo inapropiable, nos hablan sobre su relación
+          con el archivo bibliográfico de Elena Lucca, sus procesos de escucha y
+          el encuentro de materiales más allá de lo tangible, Elena nos comparte
+          sus experiencias situada y propone una poética del encuentro.
+
+          <br />
+          <br />
+
+          20 de Noviembre de 2024
+
+          <br />
+          Paulina Varas, Fernanda Carvajal, Lucia Esperanza Bianchi, Javiera
+          Manzi y Elena Lucca
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/C8F4Oai56oc"></iframe>
+
+        <p class="creditos">
+          ¿Qué puede la Ecosomática?
+          <br />
+          Conversación y activación a los 10 años de trabajo ecosomática de
+          "Soma & po"
+          <br />
+          <br />
+          En esta sesión de cierre, Joanne Clavel y Marie Bardet nos comparten
+          sobre el grupo Soma y Po, como respuesta de conectar lo somático y
+          político. Proponen repensar lo colectivo, la experimentación sensible,
+          combinar prácticas más allá de lo somático y preguntar sobre cómo se
+          relacionan con lo queer y los feminismos Además, de construir un
+          diálogo sobre la noción de gesto.
+
+          <br />
+          <br />
+
+          4 de Diciembre de 2024
+          <br />
+          Joanne Clavel y Marie Bardet
+        </p>
+
+        <img
+          id="logos"
+          src="https://lh3.googleusercontent.com/d/1H_03ipyzEqmHnEQn1aA22j72Pjqzgk-i=w1020?authuser=0"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

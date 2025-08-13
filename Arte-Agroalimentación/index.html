@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="Compartencia/style.css" />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+
+    <div id="mySidebar" class="sidebar">
+      <h2 id="bar">
+        <a href="/">Cosecha de<br />Gestos</a>
+      </h2>
+
+      <a class="lista" href="Experiencias">EXPERIENCIAS</a>
+      <a class="lista" href="Laboratorio GA"
+        >LABORATORIO DE GESTOS AGROECOLÓGICOS</a
+      >
+      <a class="lista" href="Debate Pedagógico">DEBATE PEDAGÓGICO</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="oopenNav()">☰</button>
+      <button class="back" id="back" onclick="back(bb)">&#60;</button>
+      <div id="page">
+        <h3>
+          <a href="index.html">
+            Cosecha
+            <br />
+            de Gestos
+          </a>
+        </h3>
+        <h1>Arte, agroalimentación y</h1>
+        <h1>pedagogía en México</h1>
+        <br /><br />
+        <p id="lugar">Oaxaca de Juárez</p>
+
+        <p class="autoria">Marilyn Payrol Morán</p>
+        <br />
+
+        <h4 class="sub">Introducción</h4>
+        <br />
+        <br />
+
+        <p>
+          En la última década, se ha hecho cada vez más notoria la imbricación
+          de las prácticas artísticas con la agroalimentación. No se trata tanto
+          de intervenciones desarrolladas en lugares legitimados y acotados del
+          arte como galerías y museos (Botinelli y D’Ayala, 2017), sino que
+          están muy cercanas a lo que se ha reconocido como “arte socialmente
+          comprometido”, “arte comunitario”, “arte participativo” o “arte basado
+          en investigación”; es decir, a ese conjunto de prácticas que,
+          impulsadas por un “giro social”, exploran la colectividad, la
+          colaboración, el compromiso directo con sectores específicos de la
+          sociedad, mientras ponen el énfasis en los procesos más que en los
+          resultados (Bishop, 2007). Estas iniciativas recientes, además, están
+          profundamente atravesadas por el deseo de actuar ante la crisis
+          ecosocial y, en ese sentido, imaginan y proponen alternativas a los
+          sistemas agroalimentarios globales que fomentan la injusticia, la
+          desigualdad, el extractivismo y la destrucción de los entornos y modos
+          de vida humanos y no humanos (Benish y Blanc, 2023; Bottinelli, 2023).
+        </p>
+        <br />
+        <br />
+
+        <p>
+          Aquí, me gustaría dar cuenta de cinco proyectos desarrollados en
+          México que se enmarcan en esta línea de trabajo que conjuga arte,
+          agroalimentación y ecología. Gracias al apoyo de PAPIME PE403124 al
+          proyecto “Poéticas agrosilviculturales: estrategias situadas de
+          pedagogías y arte para los cultivos, la soberanía alimentaria y las
+          diversidades vitales” y como parte de mi investigación en el doctorado
+          en Historia del Arte de la Universidad Nacional Autónoma de México
+          (UNAM), pude desarrollar prácticas de campo en el estado de Oaxaca de
+          Juárez y entrar en contacto con estas iniciativas y/o dialogar con
+          algunos de sus principales actores a finales de septiembre de 2024.
+          Con La milpa, la escuela, el último de los proyectos que incluyo, he
+          tenido una relación más sostenida: he sido partícipe, en calidad de
+          aprendiz, de todo el programa de un año de duración, y también me he
+          enfocado en estudiarlo detenidamente a través de mi trabajo de tesis.
+          Lo que me interesa en particular con este breve recuento –que tiene un
+          tono básicamente descriptivo– es advertir la potencia pedagógica de
+          este tipo de prácticas que, como han señalado Shin y Bae (2019),
+          des-territorializan tanto la creación artística como la enseñanza en
+          sus formatos convencionales (p. 232).
+        </p>
+        <br />
+        <br />
+
+        <h4 class="sub">El lugar del arte: Cochera en Servicio</h4>
+        <br />
+        <br />
+
+        <p>
+          Cochera en Servicio abrió sus puertas, en el barrio de Jalatlaco, el 3
+          de enero de 2016. Desde entonces, los primeros domingos de cada mes,
+          acoge a personas de distintas edades, profesiones, orígenes sociales y
+          territorios para compartir saberes que permitan generar acciones
+          principalmente en torno a la alimentación saludable, pero también al
+          acceso al agua o a la crisis de la basura que padece la gentrificada
+          ciudad de Oaxaca. En palabras de Gabriela León, una de sus fundadoras,
+          “reunirnos con regularidad en la Cochera, nos ha permitido compartir
+          experiencias y fracasos, nos ha llevado a fortalecer nuestros afectos
+          y redes de cuidado y apoyo […] este proceso ha implicado
+          desaprendizaje de las relaciones de poder capitalistas y patriarcales
+          y de aprendizaje de un Buen Vivir” (León, 2024, p. 19).
+        </p>
+        <br />
+        <br />
+
+        <p>
+          Ese desaprendizaje de la lógica capitalista se ha cifrado,
+          fundamentalmente, en la subversión del principio de la escasez que ha
+          regido las economías modernas. Para Gustavo Esteva, la escasez es una
+          condición generalizada de nuestras sociedades que posibilita que la
+          gente sea alimentada y viva en continua dependencia de las operaciones
+          y servicios puestos en marcha por aparatos institucionales –ya sean
+          públicos o privados (1994, p. 6). El trueque ha sido, en la Cochera,
+          una herramienta esencial en ese socavamiento de la ley de la escasez;
+          de hecho, fue con el trueque que el proyecto inició: ante la
+          abundancia del chayotal de su patio, Gabriela León y Nahú Rodríguez
+          decidieron cambiar los chayotes por otros alimentos sembrados por sus
+          vecinas del mercadito Tianguis Popular Mujer Nueva. La satisfacción
+          del ejercicio hizo evidente que adoptar el trueque, esa práctica de
+          intercambiar productos sin mediación de dinero implementada por muchos
+          pueblos originarios y que en Oaxaca ha perdurado, era una acción de
+          movilización política a pequeña escala pero significativa. Con el
+          tiempo, los participantes de la Cochera han entendido que lo que han
+          activado es un postrueque porque los productos han sido ofrecidos o
+          recibidos no en base al valor económico que el mercado formal o
+          informal establece, sino en relación a los vínculos afectivos, de
+          respeto y confianza que se han ido cultivando en la comunidad (León,
+          2024, p. 37). El postrueque, además, implica que lo que se comparte no
+          es sólo un bien o producto sino conocimientos, saberes, reflexiones y
+          formas más éticas de relacionarse con humanos y no-humanos. Como me
+          comentó Gabriela, lo que han cosechado, esencialmente, es abundancia:
+        </p>
+        <br />
+        <br />
+
+        <iframe
+          class="sonido"
+          width="100%"
+          height="300"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074849832&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        ></iframe>
+
+        <p>
+          Esa abundancia ha requerido, no obstante, un cultivo constante y
+          atento. Para Gabriela, “lo que fue un acierto de la Cochera es que no
+          se planteó nunca ni como una ONG ni como un proyecto artístico”. Eso
+          les dio una gran libertad: los participantes se sintieron libres de
+          experimentar, de apropiarse del proyecto y de sentirse responsables
+          por lo que provocaba o generaba. La Cochera “fue, honestamente, una
+          construcción colectiva sin ninguna pretensión de pertenecer a ningún
+          campo, ni al del arte, ni al de las ciencias sociales”. Para poder
+          conservar ese espacio de libertad, Gabriela creó
+          <a href="http://lapolinizadora.com/">La Polinizadora</a>: un canal en
+          el que ha transferido parte de las preocupaciones, hallazgos de la
+          Cochera y los ha fecundado con metodologías y lógicas artísticas.
+        </p>
+        <br />
+        <br />
+
+        <p>
+          Tal decisión me hizo volver sobre cuestionamientos que, a menudo,
+          emergen en la reflexión sobre el arte: ¿pueden los supuestos desde los
+          que opera la práctica artística –propiedad, autoría, originalidad,
+          etc.– corromper la creación colectiva? Planteado de otro modo, ¿en qué
+          medida las prácticas artísticas potencian, contaminan o cancelan la
+          creación de comunidad y los procesos de aprendizaje en común? Los
+          proyectos de arte y agroecología que comentaré a continuación ofrecen,
+          de maneras diferentes y singulares, algunas respuestas a estas
+          interrogantes.
+        </p>
+        <br />
+        <br />
+
+        <h4 class="sub">Terreno Familiar: la potencia de las redes</h4>
+        <br />
+        <br />
+
+        <p>
+          Uno de los proyectos que emergió de la abundancia de Cochera en
+          Servicio es Terreno Familiar, una iniciativa enfocada en fusionar la
+          agricultura, las ecotecnologías, el arte y los procesos de enseñanza.
+          Recién asentados en Tlalixtac de Cabrera, un pueblo de las afueras de
+          la ciudad de Oaxaca, Lorena Robles y Miguel Cinta comenzaron a asistir
+          a la Cochera. Ahí fue cuando decidieron convertir su terreno de 1600
+          metros cuadrados, pensado para casa habitación, en un huerto de
+          agricultura sintrópica acompañado de un Aula Viva.
+        </p>
+        <br />
+        <br />
+
+        <p class="cita">
+          En la Cochera, además de los talleres y charlas, conectamos con gente
+          que se dedicaba a asesorar, daba talleres gratuitos, buscaban
+          voluntarios e intercambiaban conocimientos como Huerto con Glamur,
+          Huerto Jalatlaco... fue una vinculación tras otra, de ahí surgió
+          nuestro interés en involucrarnos en aprender... Luego nos vinculamos
+          con el CAAS (Colectivo de Aprendizaje en Alimentos Sanos) de Ideas
+          Comunitarias y en estos caminos, en nuestra vocación de aprendizaje...
+          por azares de la vida y de la sintropía […] decidimos crear Aula Viva.
+          (Lorena Robles en León, 2024, p. 80).
+        </p>
+        <br />
+        <br />
+
+        <iframe
+          class="sonido"
+          width="100%"
+          height="300"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074849828&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        ></iframe>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://drive.google.com/thumbnail?id=1jPTE3iOQmZuCjqiIjN8of9mE1O2IrbMM&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1s59cV4Hi97KcrX8hc0whJi5PHDKbvwZ5&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1Itg99Scg9hQz3wvBeP-0qszXcFCdwls3&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=13eAsrts7HD8-qQtPQDKdUcys0UOqli0D&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+        <p class="creditos">Cortesía de Miguel Cinta Robles</p>
+
+        <p>
+          Cuando visité Terreno Familiar, invitada por Miguel Cinta Robles,
+          coincidí con un grupo de estudiantes de la licenciatura en
+          arquitectura de la Universidad Regional del Sureste (URSE), quienes
+          tuvieron la posibilidad de ensayar técnicas de bioconstrucción
+          –preparando, con sus pies en el lodo, el material con el que
+          recubrirían la estructura de los muros, por ejemplo. Mediante ese
+          proceso, les fue más fácil entender cómo actualmente no sólo son
+          posibles sino necesarias, en términos ecológicos, económicos y
+          sociales, otras formas de construcción.
+        </p>
+        <br />
+        <br />
+
+        <p>
+          Ese día también conocí a Simona, una joven profesora estadounidense
+          que trabajaba como voluntaria en el huerto sintrópico de Terreno.
+          Nacida en Nueva York, Simona creció bastante desconectada de la
+          agricultura, pero comenzó a interesarse en la alimentación, lo que la
+          ha llevado a participar en alrededor de veinte proyectos de
+          agricultura regenerativa a lo largo de los años (tanto en Estados
+          Unidos, como en la Patagonia, Colombia y México). Sin embargo, para
+          ella, “estar en Terreno Familiar se siente casi inexplicablemente
+          diferente”. En sus palabras,
+        </p>
+        <br />
+        <br />
+
+        <p class="cita">
+          estar en Terreno Familiar es como estar en un laboratorio, guiado por
+          la curiosidad, la exploración y la creatividad. No se aferran a una
+          forma única, dogmática o lucrativa de enfocar la agricultura
+          regenerativa. En Terreno Familiar te sientes como si te acogieran en
+          una familia, donde valoran y escuchan tus ideas. Para ellos, eres un
+          verdadero colaborador. Tienen una capacidad de respuesta y una
+          receptividad que no siempre ha estado presente en otros proyectos a
+          los que he dedicado tiempo. […] Además, están arraigados en la
+          comunidad y comprometidos con apoyarla y tejer vínculos con ella. Es
+          cierto que recurren a conocimientos y procesos más académicos, pero
+          los conjugan con los saberes locales de la gente que ha estado
+          vinculada a esta tierra desde siempre. Una cosa es HABLAR de crear
+          comunidad y otra es tener un espacio donde se actúe en ese sentido.
+          [énfasis en el original]
+        </p>
+        <br />
+        <br />
+
+        <p>
+          La noción de familia que se maneja y da nombre al proyecto ha sido
+          central en los debates sobre arte y agroalimentación. Esto claramente
+          está relacionado con que cocinar y comer han sido, durante mucho
+          tiempo, prácticas asociadas a los espacios íntimos del hogar y a
+          personas cercanas sobre todo mujeres y madres de familia. Para Miguel
+          Cintas Robles, la idea de familia en Terreno no tiene que ver
+          únicamente con el vínculo genético o de parentesco, sino que más bien
+          está relacionada a una “cooperación expandida y de organización
+          comunitaria” promovida desde el acogimiento y el respeto. Como han
+          señalado Benish y Blanc (2013), estos proyectos artísticos que se
+          involucran con la alimentación “no son ‘sólo’ sobre alimentos y
+          sustento para el cuerpo, sino también sobre el proceso efímero e
+          inmaterial de personas que se unen para crear algo. El resultado es la
+          comida, pero los actos previos de sembrar, arar, desmalezar, cortar,
+          limpiar, fertilizar, cosechar, etc. crean familia y comunidad” (p. 5).
+          Definitivamente, esto hace de Terreno Familiar un proyecto situado y
+          vinculante que se hace cargo genuina y responsablemente de las
+          interacciones comunitarias que fomenta.
+        </p>
+        <br />
+        <br />
+
+        <h4 class="sub">Un fogón en el museo</h4>
+        <br />
+        <br />
+
+        <p>
+          Una manera notablemente diferente de abordar la relación entre
+          pedagogía, arte y agroalimentación es puesta en práctica por Dea López
+          a través de su proyecto curatorial La escuela del fogón. Dea, con
+          quien compartí durante esos días en Oaxaca, estudió arte contemporáneo
+          en la Universidad Iberoamericana de Puebla. Una vez graduada, creó
+          Co.merr, que comenzó siendo una especie de archivo residual online en
+          el cual volcó el material sobre arte y comida encontrado a lo largo de
+          su proceso de formación e investigación y que terminó funcionando como
+          una residencia y una plataforma curatorial bastante experimental. Una
+          de las acciones de Co.merr que más atención captó fue la realizada en
+          2020 en una plaza de Oaxaca, durante la pandemia de Covid-19, con
+          César Ríos. Ambos artistas instalaron un puesto de sopes y quesadillas
+          –que fueron hechas en forma de “Puppy”, la célebre escultura de Jeff
+          Koons. Estos “‘finos antojitos escultóricos’, con precios de 15 y 25
+          pesos, incluía[n] un certificado de autenticidad, es decir, la ‘pieza
+          adquirida’ formaba parte de la exhibición ‘para comer aquí’”
+          (Caballero, 2020). Si bien en esta acción performática y efímera era
+          evidente un rejuego más formal en el que la comida operaba como medio
+          artístico, en realidad, también era notorio el interés por indagar en
+          los modos de sociabilidad que la comida genera.
+        </p>
+        <br />
+        <br />
+
+        <p>
+          En 2022, Co.merr recibió una invitación a realizar un solo show en el
+          Museo de Arte de Zapopan (MAZ) y ahí, la idea de explorar tanto las
+          sociabilidades como las formas de organización y los aprendizajes
+          posibilitados por el acto de cocinar y comer en espacios públicos,
+          cobró mayor fuerza. Así surgió La escuela del fogón, una exhibición
+          que buscaba mapear levantamientos armados en América, pero poniendo el
+          énfasis en el componente de cuidado y de sostenimiento colectivo que
+          la cocina y los cuerpos femeninos procuran. Generar un archivo en sala
+          no era suficiente para responder a todas estas inquietudes, por lo que
+          para el equipo curatorial –conformado por Dea, el museógrafo Saúl
+          Becerra y el comunicador visual Samuel Morales– se tornó ineludible
+          crear un programa público paralelo que tuvo como epicentro la
+          construcción de un fogón o estufa Patsari en el patio del museo. “Se
+          dieron talleres, se compartieron conocimientos de todo tipo, porque en
+          la cocina –al igual que en las luchas– hay metodologías en las que
+          está presente la oralidad, los afectos funcionan y son completamente
+          vigentes, se enseña haciendo. Esto es lo que concibo como la escuela”
+          (Dea López en Paredes, 2023)
+        </p>
+        <br />
+        <br />
+
+        <div
+          id="carouselControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://drive.google.com/thumbnail?id=1qFapoea16GPh2pB2fJV6_dcGtA6IRFtG&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=12j--xyzssyk7SG-S894ulsWfYboRNrq3&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1busJHPYzguvcaAWmXnyRnvIL0trWDjAu&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1Uiok1alc1fO0YfcVOps2u4mJwsszU2IH&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+        <p class="creditos">Cortesía del Museo de Arte de Zapopan (MAZ)</p>
+
+        <iframe
+          class="sonido"
+          width="100%"
+          height="300"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2074849828&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+        ></iframe>
+        <p>
+          Tras la experiencia de 2023, La escuela del fogón se constituyó como
+          proyecto. Su más reciente trabajo ha sido con la plataforma
+          investigativa y expositiva
+          <a href="https://www.proyectormx.org/ciclo-11"
+            >“Máquinas Alimentarias: Laboratorio de la Geografía Inadvertida”</a
+          >, concebida por Future Foodscapes Research Unit y Proyector. Para
+          esta ocasión, La escuela del fogón colaboró con Jaime Santiz Gómez, un
+          chiapaneco que hace anafres con los materiales (latas, tubos, tambos,
+          partes de lavadoras) que la gente vierte en el basurero municipal “El
+          Tívoli”, en la colonia La Libertad de San Cristóbal de las Casas. A
+          partir del conocimiento de Jaime, Dea y su equipo diseñaron y
+          distribuyeron un manual (a modo de flyer) y realizarán talleres para
+          enseñar cómo “todo puede ser un anafre”. Con estos anafres –hornillos
+          o braceros portátiles–, La escuela del fogón continúa creando
+          infraestructuras culinarias para seguir prendiendo en colectivo los
+          fuegos, los aprendizajes, los afectos y las transformaciones (Paredes,
+          2023). Más puntualmente: mediante su práctica de prestarle atención a
+          la naturaleza material y simbólica de los sistemas alimentarios, La
+          escuela del fogón hace evidente que cocinar entraña siempre una
+          negociación constante y productiva entre los alimentos, quienes lo
+          preparan y consumen, los espacios que se habilitan y las tecnologías e
+          infraestructuras culinarias, así como los valores estéticos y
+          cognitivos asociados (Ayora-Diaz, 2016; Pilcher, 2018).
+        </p>
+        <br />
+        <br />
+
+        <h4 class="sub">Un laboratorio de investigación en territorio</h4>
+        <br />
+        <br />
+
+        <p>
+          Los anafres de La escuela del fogón viajaron hasta Santo Domingo de
+          Tomaltepec, Oaxaca, una de las comunidades donde trabaja Cocina
+          CoLaboratorio. Cocina CoLaboratorio se autodescribe como “un proyecto
+          transdisciplinario de acción, creación, educación e investigación en
+          busca de sistemas agroalimentarios más justos y resilientes” (Kooi y
+          Martínez Balvanera, 2021, p. 184). El proyecto se instaló en Santo
+          Domingo de Tomaltepec en 2020, dos años después de implementar un
+          programa piloto exitoso en el municipio fronterizo de Marqués de
+          Comillas, en Chiapas.
+        </p>
+        <br />
+        <br />
+
+        <p>
+          Durante mi estancia en Santo Domingo, la vocación de Cocina
+          CoLaboratorio de conjugar conocimientos y metodologías científicas o
+          académicas con prácticas y saberes locales (que se han ido perdiendo)
+          en territorio, resultó notoria. La mañana del jueves 26 de septiembre
+          se desarrolló el taller “¿Qué vamos a comer en el fin del mundo?”. La
+          actividad comenzó con una discusión de los resultados de cuatro
+          investigaciones realizadas, en un periodo de dos años, desde y con la
+          comunidad: 1) el experimento de agricultura sintrópica “La huerta
+          revuelta” que reveló, entre otras cosas, que los cultivos de tomate y
+          garbanzo en la zona proveen mayor cobertura de suelo y son más
+          resistentes a las plagas (García et al., 2024); 2) la investigación de
+          Reyna Domínguez, bióloga y coordinadora académica de Cocina
+          CoLaboratorio en Santo Domingo, sobre plantas silvestres comestibles;
+          3) el trabajo doctoral de la bióloga e historiadora de la ciencia,
+          Daniela Sclavo, acerca del chile tabiche, una especie de chile que se
+          consumía en la comunidad y que fue desplazada cuando las latas de
+          jalapeño invadieron los mercados locales (Sclavo Castillo et al.,
+          2024); y 4) la investigación de la antropóloga Sarah Back-Geller sobre
+          el gusto mingano, que ensayó una forma alternativa a las políticas
+          patrimonialistas de explorar la identidad, la memoria y el territorio
+          desde la alimentación.
+        </p>
+        <br />
+        <br />
+
+        <p>
+          La segunda parte de la jornada fue dirigida por Paola Miguel García,
+          nutrióloga, coordinadora local de Cocina CoLaboratorio y habitante de
+          Santo Domingo. Paola propuso desarrollar tres recetas sencillas con
+          ingredientes locales para responder a los deseos de la comunidad de
+          comer más saludable y de aprovechar lo que aún se siembra en la zona.
+          Los participantes conformamos tres grupos: el primero se encargó de
+          preparar un asiento de semillas (con ajo tostado, ajonjolí y semillas
+          de girasol, de calabaza y cacahuate); el segundo se concentró en
+          elaborar tortitas de quintonil, frijol y amaranto –utilizando los
+          anafres de La escuela del fogón–; y el tercero realizó un untable de
+          chocolate con camote y cacao. Finalmente, nos sentamos todos a la mesa
+          para comer e intercambiar impresiones sobre este intento de cambiar la
+          dieta con lo que se da en el territorio.
+        </p>
+        <br />
+        <br />
+
+        <div
+          id="carouselControls2"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://drive.google.com/thumbnail?id=148IibKtxZaf-dkNMhq1_4KEBtQIJ7tyF&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1o1MaTIfaiIOgOOq92kob1-QAeeRcN1gZ&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1DXmNVA6JKDS0FuU6LUwoeDKO1_hfxzE4&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=144p28mjspU-i4bkmoRhK7BUiuP9g7tfx&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselControls2"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselControls2"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+        <p class="creditos">
+          Fotografías de Markus Martínez Burman, cortesía de Cocina
+          CoLaboratorio
+        </p>
+
+        <p>
+          Al día siguiente, en la parcela de la Casa Pitahaya –donde Cocina
+          CoLaboratorio tiene su sede– se llevó a cabo el cuarto encuentro de
+          “Animar la milpa”, una propuesta experimental de acompañamiento
+          mediada por Vinik Juré. “Animar la milpa” está enfocado en lograr la
+          transición a una milpa agroecológica. A diferencia de la agricultura
+          moderna e incluso de la agricultura tradicional, en esta modalidad se
+          ponen en práctica una serie de procesos (doble excavación,
+          incorporación de composta) para evitar remover la tierra y, en cambio,
+          airearla, nutrirla y cultivarla a largo plazo y no por ciclos anuales.
+          En esa ocasión, Vinik se centró en compartir estrategias
+          agroecológicas para el manejo de plagas. Según explicó, las plagas
+          llegan a la milpa cuando no existen plantas que actúan como barreras
+          vivas. Por ejemplo, sembrar hileras de romero a los costados de las
+          huertas puede funcionar muy bien para alejar a esos organismos que
+          llamamos plagas. En su opinión, prestarle atención a los insectos que
+          llegan a la milpa es fundamental porque nos puede indicar qué
+          nutrientes le faltan al suelo, qué cultivo necesita ser renovado y,
+          sobre todo, posibilita entender que no todos los insectos o
+          microorganismos son dañinos, sino que algunos contribuyen al sistema.
+          Uno de los experimentos que realizamos fue la preparación de
+          infusiones de pericón y cempasúchil, y de higuerilla –plantas de
+          olores fuertes que abundan en la zona– las cuales fueron rociadas en
+          la milpa para repeler a los chapulines.
+        </p>
+        <br />
+        <br />
+
+        <div
+          id="carouselControls3"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://drive.google.com/thumbnail?id=19Elm9WtROM7J0r5nAoZkmaNXZoCFpDqs&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1iMBGyaR25YvhUsa21idwUIbxlOdBK-o2&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselControls3"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselControls3"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+        <p class="creditos">Fotografías de la autora</p>
+
+        <p>
+          En la investigación que Cocina CoLaboratorio realiza es crucial la
+          noción misma de laboratorio. A diferencia de otros proyectos
+          interesados en el cruce de alimentación arte y ciencia que continúan
+          asumiendo el laboratorio como un espacio seguro, cerrado y no
+          contaminado de experimentación científica (Carruth, 2013; Rogers et
+          al., 2021), en Cocina acogen los métodos de ensayo y error, en
+          territorio. Eso, indudablemente, trae consigo numerosos desafíos que
+          van desde garantizar un trabajo ininterrumpido, comprometido y ético
+          in situ hasta exponer la inviabilidad y lidiar con la incertidumbre
+          tanto en los procesos como en los resultados. Para Kooi y Martínez
+          Balvanera (2021), es la práctica sensible del diseño y las artes
+          visuales la que modifica sustancialmente la experiencia en la medida
+          en que permite traducir, comunicar y desbordar la investigación
+          científica fomentando soluciones creativas a problemas complejos (p.
+          187).
+        </p>
+        <br />
+        <br />
+
+        <h4 class="sub">La milpa como pedagogía</h4>
+        <br />
+        <br />
+
+        <p>
+          A inicios de 2024, al mismo tiempo que iniciaba mi programa de
+          investigación doctoral, decidí inscribirme en La milpa, la escuela, un
+          proyecto diseñado por Colectivo Amasijo y Calpulli Tecalco, bajo la
+          asesoría del Museo Universitario de Arte Contemporáneo (MUAC).
+          Colectivo Amasijo está conformado por cuatro mujeres que buscan
+          recuperar, a través del acto de cocinar en colectivo, la biodiversidad
+          de los sistemas agroalimentarios con los que se van implicando.
+          Calpulli Tecalco, por su parte, es una organización civil asentada en
+          la comunidad milpaaltense de San Pedro Atocpan que, desde hace más de
+          dos décadas, ha promovido la conservación de los saberes, la historia
+          y los entornos naturales de los pueblos indígenas del sur de la cuenca
+          del Anáhuac. El programa, de un año de duración, se desarrollaría
+          precisamente en Milpa Alta, que ha estado afectada por procesos
+          extractivos y devastadores de larga data como la tala indiscriminada
+          de los bosques, la adopción del monocultivo del nopal y, en especial,
+          por la expansión agresiva de la mancha urbana. La propuesta estaba
+          dirigida a aquellas personas que, viviendo en ámbitos urbanos, les
+          interesara aprender de la tierra y de quienes la trabajan. Así se
+          conformó un grupo de aprendices compuesto por realizadores, fotógrafos
+          y productores de cine, empresarios, abogados, historiadores del arte y
+          artistas visuales, diseñadores, programadores, galeristas y
+          coleccionistas de arte. El objetivo principal de la escuela era
+          potencializar, desde la implicación material con la milpa, la
+          creatividad de los involucrados en nuestros dominios profesionales y,
+          por supuesto, que ello beneficiara de alguna forma al territorio y a
+          la comunidad que nos convocaba. Esto le otorgó una singularidad al
+          proyecto: no se trataba, como sucede a menudo, de involucrar a la
+          comunidad a través de la mediación de la práctica artística, sino que
+          era la propia comunidad la que ponía sus demandas sobre la mesa para
+          interpelar a actores externos (muy vinculados al mundo del arte,
+          además).
+        </p>
+        <br />
+        <br />
+
+        <p>
+          El ejercicio pedagógico resultante fue ciertamente situado y
+          encarnado. El programa se estructuró en cinco módulos que coincidían
+          con los trabajos que marca el ciclo de la milpa: en marzo, comenzamos
+          con la selección de semillas; entre abril y mayo, preparamos la tierra
+          y sembramos; en junio, con la llegada de las lluvias, nos encargamos
+          de deshierbar y echar montón; entre agosto y octubre, mientras los
+          cultivos de la milpa crecían, recolectamos quelites, hierbas
+          medicinales y hongos; y, entre noviembre y enero realizamos la pizca o
+          recogida de la cosecha. Sin embargo, hicimos mucho más que eso, porque
+          una premisa fundamental del programa era hacernos entender que la
+          milpa no es sólo una parcela cultivada sino un sistema complejo y
+          relacional cuyo sostenimiento depende de la colaboración estrecha de
+          múltiples humanos y no humanos. En ese sentido, en La milpa, la
+          escuela había que partir de conocer a profundidad el territorio, lo
+          que implicó subir el volcán Teuhtli, ir al mercado de acopio, explorar
+          cuidadosamente las ruinas prehispánicas de Tizacalco y recibir clases
+          sobre la tenencia de la tierra en Milpa Alta. Asimismo, era primordial
+          dominar algunas nociones de la lengua náhuatl y detenerse en revivir
+          saberes y prácticas asociadas a la milpa –muchos en riesgo de
+          desaparecer– como la construcción de un refugio de pasto que los
+          campesinos hacen en los márgenes de los terrenos cultivados para
+          guarecerse de las inclemencias del tiempo, el proceso de extracción de
+          pulque en los magueyales o el pastoreo de cabras y ovejas en los
+          bosques comunales amenazados por la urbanización no planificada, etc.
+        </p>
+        <br />
+        <br />
+
+        <div
+          id="carouselControls4"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://drive.google.com/thumbnail?id=1rJHkBEh4Sa6Fxiw69vFYfOGX9efNqA4w&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1zJ2h5oauwQGArVApBLuIBV8HSbeBLgB7&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1kjVNQ32gpq1dwzTDhxQSNZZCczxoAT43&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1vI-TTxlrN-bx5YgATVUNmbEtgwRBFbaH&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1s6gpPV1ihrv32KMy-OEyAj5WTQBud3Gr&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://drive.google.com/thumbnail?id=1_GovygSTjCArmHvTQHQiJz2yJWJzdH3Y&sz=w1020"
+                class="d-block"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselControls4"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselControls4"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+
+        <p class="creditos">
+          Fotografías de Felipe Luna Espinosa, cortesía de La milpa, la escuela
+        </p>
+
+        <p>
+          En todo este proceso de aprendizaje, la alimentación y el arte jugaron
+          roles cruciales. Por un lado, prestarle atención al acto de cocinar y
+          comer juntos –desde platillos con carácter celebratorio (chileatole,
+          tamales) hasta otros un poco sofisticados elaborados a partir de
+          ingredientes locales como codornices asadas, moles de guajolote y
+          pato– en correspondencia con los ciclos de secas y lluvias fue muy
+          revelador. Nos enseñó sobre el cuidado, el trabajo y los saberes de
+          aquellos que cultivan, pero también de las mujeres que preparan esos
+          alimentos e, incluso, los cargan. Como ha aseverado Annemarie Mol, los
+          alimentos que consumimos y sus historias asociadas, logran transformar
+          nuestras habilidades de discernimiento y nuestras inclinaciones
+          apreciativas, de manera que “conocer un plato puede llevarnos a que lo
+          valoraremos cada vez más positivamente” (2021, p. 77). Más importante
+          aún es el hecho de que al comer el sujeto cognoscente no mantiene
+          distancia del objeto de conocimiento; en cambio, sujeto y objeto son
+          interferidos, modificados y entrelazados activando otras modalidades
+          relacionales y afectivas de aprender y de estar en el mundo (Mol,
+          2021, p. 74). La poética del arte –que atravesó el programa mediante
+          textos, presentaciones de obras, correspondencias y conversaciones con
+          artistas, teóricos y curadores– fue, por otro lado, un elemento
+          determinante en la activación de esas formas diferentes, encarnadas y
+          experienciales de conocer. Tanto La milpa, la escuela como el resto de
+          las prácticas aquí comentadas que interrelacionan el arte y
+          agroalimentación con una orientación ecológica y pedagógica, son
+          sumamente pertinentes para abrirnos a transformaciones en nuestros
+          modos de hacer y de dar cuenta de la vida en colectivo.
+        </p>
+        <br />
+        <br />
+
+        <h4 class="sub">Referencias:</h4>
+        <br />
+        <br />
+
+        <p>
+          Ayora-Diaz, S. I. (Ed.). (2016). Cooking Technology. Transformations
+          in Culinary Practice in Mexico and Latin America. Londres: Bloomsbury
+          Academic.
+          <br />
+          <br />
+          Benish, B., y Blanc, N. (2023). Art, Farming and Food for the Future.
+          Transforming Agriculture. Londres: Routledge.
+          <br />
+          <br />
+          Bishop, C. (2007). El giro social: (la) colaboración y sus
+          descontentos. Ramona, 72, 28-37.
+          https://ahira.com.ar/ejemplares/ramona-no-72/
+          <br />
+          <br />
+          Bottinelli, S. (2023). Artists and the Practice of Agriculture.
+          Politics and Aesthetics of Food Sovereignty in Art since 1960.
+          Londres: Routledge.
+          <br />
+          <br />
+          Bottinelli, S. y D’Ayala, M. (Eds.). (2017). The Taste of Art.
+          Cooking, Food, and Counterculture in Contemporary Practices.
+          Fayetteville: The University of Arkansas Press.
+          <br />
+          <br />
+          Caballero, Fabiola. (2020, 23 de diciembre). Quesadilla Jeff Koons y
+          sopes Gucci: Oaxaca vuelve fashionista a la garnacha. El Sol de
+          México.
+          https://oem.com.mx/elsoldemexico/tendencias/quesadilla-jeff-koons-y-sopes-
+          gucci-oaxaca-vuelve-fashionista-a-la-garnacha-15467619
+          <br />
+          <br />
+          Carruth, A. (2013). Culturing Food: Bioart and In Vitro Meat.
+          Parallax, 19(1), 88- 100.
+          <br />
+          <br />
+          Esteva, G. (1994). Re-embedding Food in Agriculture. Culture and
+          Agriculture, 13(48), 2-12.
+          <br />
+          <br />
+          García G., Orozco Ramírez Q., y Balvanera P. (2024). La huerta
+          revuelta: las múltiples funciones de una parcela agroecológica.
+          Boletín De La Sociedad Científica Mexicana De Ecología, 4(6), 26-34.
+          <br />
+          <br />
+          Kooi, A., &amp; Martínez Balvanera, M. (2021). Case study: climate
+          action (SDG13): CoLaboratory Kitchen. In E. Tsekleves, R. Cooper &amp;
+          J. Spencer (Eds.), Design for Global Challenges and Goals (pp.
+          183-203). Routledge.
+          <br />
+          <br />
+          León, G. (2024). Sobre el cultivo de la abundancia y el ejercicio de
+          la reciprocidad profunda en la comunidad de Cochera en Servicio [Tesis
+          de Maestría no publicada]. Universidad Autónoma “Benito Juárez” de
+          Oaxaca.
+          <br />
+          <br />
+          Mol, A. (2021). Eating in Theory. Durham y Londres: Duke University
+          Press.
+          <br />
+          <br />
+          Paredes, H. (2023, 12 de octubre). La Escuela del Fogón: la cocina
+          como espacio de transformación social. C&amp; América Latina.
+          https://amlatina.contemporaryand.com/es/editorial/la-escuela-del-fogon-the-
+          kitchen-as-a-place-for-social-transformation/
+          <br />
+          <br />
+          Pilcher, J. (Ed.). (2018). Culinary Infrastructure. Londres y Nueva
+          York: Routledge.
+          <br />
+          <br />
+          Rogers, H. S., Halpern, M. H., Hannah, D., y Ridder-Vignone, K.
+          (Eds.). (2021). Routledge Handbook of Art, Science, and Technology
+          Studies. Londres: Routledge.
+          <br />
+          <br />
+          Sclavo Castillo, D., Pérez Volkow, L. &amp; Hernández Martínez, E.
+          (2024). El chile tabiche: memoria, reencuentro y acción comunitaria en
+          Santo Domingo Tomaltepec, Oaxaca, México. Naturaleza y Sociedad.
+          Desafíos Medioambientales (8), 79-103.
+          https://doi.org/10.53010/NLTT9430
+          <br />
+          <br />
+          Shin, R., y Bae, J. (2019) Conflict Kitchen and Enemy Kitchen:
+          Socially Engaged Food Pedagogy. Studies in Art Education, 60(3),
+          219-235.
+        </p>
+        <img
+          id="logos"
+          src="https://drive.google.com/thumbnail?id=1yMVvmZpx5Akrjz6QnLXNRMt4nysJ3F69&sz=w4080"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
