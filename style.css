@@ -222,7 +222,6 @@ a {
   #logos {
     width: 100%;
     margin: 0 auto;
-    object-fit: contain;
     display: block;
   }
 }
